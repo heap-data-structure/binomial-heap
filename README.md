@@ -1,8 +1,8 @@
 [js-binomial-heap](http://aureooms.github.io/js-binomial-heap)
-====
+==
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/aureooms/js-binomial-heap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Heap code bricks in JavaScript.
+Binomial heap code bricks in JavaScript.
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-binomial-heap.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-binomial-heap/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-binomial-heap.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-binomial-heap)
@@ -16,12 +16,10 @@ Heap code bricks in JavaScript.
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-binomial-heap.svg?style=flat)](https://github.com/aureooms/js-binomial-heap/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-binomial-heap.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-binomial-heap)
 
-This package contains a `d`-ary heap implementation that can be parametrized
-with any `d`, and some binomial heap implementations.
+This package contains binomial heap implementations.
 
-Binary and Binomial heap reference:
+
+## Reference:
 
   - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf
-  - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps
 
-***( forked from [js-heap](https://github.com/aureooms/js-heap) )***
