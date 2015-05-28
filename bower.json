@@ -3,7 +3,7 @@
 	"name": "aureooms-js-binomial-heap",
 	"license": "AGPL-3.0",
 	"description": "Binomial heap code bricks for JavaScript",
-	"version": "9.0.0",
+	"version": "9.0.1",
 	"main": "js/dist/binomial-heap.js",
 	"ignore": [
 		"js/index.js",
