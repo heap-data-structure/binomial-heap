@@ -1,10 +1,10 @@
 {
-	"name": "heap",
+	"name": "binomial-heap",
 	"code": {
 		"main": [
 			"js",
 			"dist",
-			"heap.js"
+			"binomial-heap.js"
 		],
 		"test": [
 			"test",

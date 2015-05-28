@@ -1,11 +1,11 @@
 {
-	"name": "aureooms-js-heap",
-	"repo": "aureooms/js-heap",
+	"name": "aureooms-js-binomial-heap",
+	"repo": "aureooms/js-binomial-heap",
 	"scripts": [
-		"js/dist/heap.js"
+		"js/dist/binomial-heap.js"
 	],
 	"version": "7.0.0",
-	"description": "Heap code bricks for JavaScript",
-	"main": "js/dist/heap.js",
+	"description": "Binomial heap code bricks for JavaScript",
+	"main": "js/dist/binomial-heap.js",
 	"license": "AGPL-3.0"
 }

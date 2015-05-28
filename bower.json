@@ -1,10 +1,10 @@
 {
-	"homepage": "http://aureooms.github.io/js-heap/",
-	"name": "aureooms-js-heap",
+	"homepage": "http://aureooms.github.io/js-binomial-heap/",
+	"name": "aureooms-js-binomial-heap",
 	"license": "AGPL-3.0",
-	"description": "Heap code bricks for JavaScript",
+	"description": "Binomial heap code bricks for JavaScript",
 	"version": "7.0.0",
-	"main": "js/dist/heap.js",
+	"main": "js/dist/binomial-heap.js",
 	"ignore": [
 		"js/index.js",
 		"js/src",
