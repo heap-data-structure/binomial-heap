@@ -1,37 +1,37 @@
 {
-  "name": "aureooms-js-binomial-heap",
-  "description": "Binomial heap code bricks for JavaScript",
-  "homepage": "http://aureooms.github.io/js-binomial-heap/",
-  "main": "js/dist/binomial-heap.js",
-  "version": "9.0.1",
-  "repository": {
-    "url": "https://github.com/aureooms/js-binomial-heap.git",
-    "type": "git"
-  },
-  "keywords": [
-    "binomial",
-    "bricks",
-    "ender",
-    "heap",
-    "javascript",
-    "js"
-  ],
-  "scripts": {
-    "build": "./node_modules/.bin/aureooms-node-package-build",
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "doc": "./node_modules/.bin/groc"
-  },
-  "author": "aureooms",
-  "devDependencies": {
-    "aureooms-js-heap-spec": "^8.0.0",
-    "aureooms-node-package": "^4.2.5"
-  },
-  "bugs": {
-    "url": "https://github.com/aureooms/js-binomial-heap/issues"
-  },
-  "dependencies": {},
-  "license": "AGPL-3.0",
-  "spm": {
-    "main": "js/dist/binomial-heap.js"
-  }
+	"name": "aureooms-js-binomial-heap",
+	"description": "Binomial heap code bricks for JavaScript",
+	"homepage": "http://aureooms.github.io/js-binomial-heap/",
+	"main": "js/dist/binomial-heap.js",
+	"version": "10.0.0",
+	"repository": {
+		"url": "https://github.com/aureooms/js-binomial-heap.git",
+		"type": "git"
+	},
+	"keywords": [
+		"binomial",
+		"bricks",
+		"ender",
+		"heap",
+		"javascript",
+		"js"
+	],
+	"scripts": {
+		"build": "./node_modules/.bin/aureooms-node-package-build",
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"doc": "./node_modules/.bin/groc"
+	},
+	"author": "aureooms",
+	"devDependencies": {
+		"aureooms-js-heap-spec": "^8.0.0",
+		"aureooms-node-package": "^4.2.5"
+	},
+	"bugs": {
+		"url": "https://github.com/aureooms/js-binomial-heap/issues"
+	},
+	"dependencies": {},
+	"license": "AGPL-3.0",
+	"spm": {
+		"main": "js/dist/binomial-heap.js"
+	}
 }
