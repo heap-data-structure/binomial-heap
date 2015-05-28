@@ -1,6 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/aureooms/js-binomial-heap"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-binomial-heap/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="-js-binomial-heap-http-aureooms-github-io-js-binomial-heap-"><a href="http://aureooms.github.io/js-binomial-heap">js-binomial-heap</a></h1>
 <p><a href="https://gitter.im/aureooms/js-binomial-heap?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter"></a></p>
 <p>Binomial heap code bricks in JavaScript.</p>
+<pre><code class="lang-js"><span class="hljs-comment">//</span>
+<span class="hljs-comment">//    o       o           o--.             o</span>
+<span class="hljs-comment">//    |\      |\          |\  \           /|\</span>
+<span class="hljs-comment">//    o o  +  o o    =    o o  o    =    o o o</span>
+<span class="hljs-comment">//      |       |           |  |\          | |\</span>
+<span class="hljs-comment">//      o       o           o  o o         o o o</span>
+<span class="hljs-comment">//                               |             |</span>
+<span class="hljs-comment">//                               o             o</span>
+<span class="hljs-comment">//</span></code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-binomial-heap/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-binomial-heap.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/v/aureooms-js-binomial-heap.svg?style=flat" alt="NPM version"></a>
 <a href="http://bower.io/search/?q=aureooms-js-binomial-heap"><img src="http://img.shields.io/bower/v/aureooms-js-binomial-heap.svg?style=flat" alt="Bower version"></a>
@@ -12,8 +21,106 @@
 <a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/dm/aureooms-js-binomial-heap.svg?style=flat" alt="NPM downloads per month"></a>
 <a href="https://github.com/aureooms/js-binomial-heap/issues"><img src="http://img.shields.io/github/issues/aureooms/js-binomial-heap.svg?style=flat" alt="GitHub issues"></a>
 <a href="http://inch-ci.org/github/aureooms/js-binomial-heap"><img src="http://inch-ci.org/github/aureooms/js-binomial-heap.svg?branch=master&amp;style=shields" alt="Inline docs"></a></p>
+<p>Can be managed through <a href="https://github.com/jspm/jspm-cli">jspm</a>,
+<a href="https://github.com/duojs/duo">duo</a>,
+<a href="https://github.com/componentjs/component">component</a>,
+<a href="https://github.com/bower/bower">bower</a>,
+<a href="https://github.com/ender-js/Ender">ender</a>,
+<a href="https://github.com/caolan/jam">jam</a>,
+<a href="https://github.com/spmjs/spm">spm</a>,
+and <a href="https://github.com/npm/npm">npm</a>.</p>
+<h2 id="description">Description</h2>
 <p>This package contains binomial heap implementations.</p>
-<h2 id="reference">Reference:</h2>
+<h2 id="install">Install</h2>
+<h3 id="jspm">jspm</h3>
+<pre><code class="lang-terminal">jspm install github:aureooms/js-binomial-heap
+# or
+jspm install npm:aureooms-js-binomial-heap</code></pre>
+<h3 id="duo">duo</h3>
+<p>No install step needed for duo!</p>
+<h3 id="component">component</h3>
+<pre><code class="lang-terminal">component install aureooms/js-binomial-heap</code></pre>
+<h3 id="bower">bower</h3>
+<pre><code class="lang-terminal">bower install aureooms-js-binomial-heap</code></pre>
+<h3 id="ender">ender</h3>
+<pre><code class="lang-terminal">ender add aureooms-js-binomial-heap</code></pre>
+<h3 id="jam">jam</h3>
+<pre><code class="lang-terminal">jam install aureooms-js-binomial-heap</code></pre>
+<h3 id="spm">spm</h3>
+<pre><code class="lang-terminal">spm install aureooms-js-binomial-heap --save</code></pre>
+<h3 id="npm">npm</h3>
+<pre><code class="lang-terminal">npm install aureooms-js-binomial-heap --save</code></pre>
+<h2 id="require">Require</h2>
+<h3 id="jspm">jspm</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> binomialheap = <span class="hljs-built_in">require</span>( <span class="hljs-string">"github:aureooms/js-binomial-heap"</span> ) ;
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">import</span> binomialheap <span class="hljs-keyword">from</span> <span class="hljs-string">'aureooms-js-binomial-heap'</span> ;</code></pre>
+<h3 id="duo">duo</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> binomialheap = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms/js-binomial-heap"</span> ) ;</code></pre>
+<h3 id="component-ender-spm-npm">component, ender, spm, npm</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> binomialheap = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-binomial-heap"</span> ) ;</code></pre>
+<h3 id="bower">bower</h3>
+<p>The script tag exposes the global variable <code>binomialheap</code>.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"bower_components/aureooms-js-binomial-heap/js/dist/binomial-heap.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
+<p>Alternatively, you can use any tool mentioned <a href="http://bower.io/docs/tools/">here</a>.</p>
+<h3 id="jam">jam</h3>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-binomial-heap"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> binomialheap </span>) </span>{ ... } ) ;</code></pre>
+<h2 id="use">Use</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// can choose between 3 different implementations</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//   - BinomialHeap( BinomialTreeWithParent )</span>
+<span class="hljs-comment">//      # head -&gt; value</span>
+<span class="hljs-comment">//      # headreference -&gt; reference</span>
+<span class="hljs-comment">//      # pop -&gt; value</span>
+<span class="hljs-comment">//      # popreference -&gt; reference</span>
+<span class="hljs-comment">//      # push( value ) -&gt; reference</span>
+<span class="hljs-comment">//      # pushreference( reference )</span>
+<span class="hljs-comment">//      # merge( other )</span>
+<span class="hljs-comment">//      # update( reference , value )</span>
+<span class="hljs-comment">//      # decreasekey( reference , value )</span>
+<span class="hljs-comment">//      # increasekey( reference , value )</span>
+<span class="hljs-comment">//      # delete( reference )</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//   - BinomialHeap( BinomialTree )</span>
+<span class="hljs-comment">//      # head -&gt; value</span>
+<span class="hljs-comment">//      # pop -&gt; value</span>
+<span class="hljs-comment">//      # push( value )</span>
+<span class="hljs-comment">//      # merge( other )</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//   - LazyBinomialHeap( BinomialTree )</span>
+<span class="hljs-comment">//      # pop -&gt; value</span>
+<span class="hljs-comment">//      # push( value )</span>
+<span class="hljs-comment">//      # merge( other )</span>
+
+<span class="hljs-keyword">let</span> compare = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-compare"</span> ) ;
+
+<span class="hljs-keyword">let</span> Heap = binomialheap. ... ( binomialheap. ... ) ;
+
+<span class="hljs-keyword">let</span> a = <span class="hljs-keyword">new</span> Heap( compare.increasing ) ;
+<span class="hljs-keyword">let</span> b = <span class="hljs-keyword">new</span> Heap( compare.increasing ) ;
+
+a.push( <span class="hljs-number">5</span> ) ;
+a.push( <span class="hljs-number">1</span> ) ;
+a.push( <span class="hljs-number">4</span> ) ;
+b.push( <span class="hljs-number">3</span> ) ;
+b.push( <span class="hljs-number">2</span> ) ;
+
+a.length ; <span class="hljs-comment">// 3</span>
+b.length ; <span class="hljs-comment">// 2</span>
+
+a.merge( b ) ;
+<span class="hljs-keyword">delete</span> b ;
+
+a.length ; <span class="hljs-comment">// 5</span>
+
+a.pop( ) ; <span class="hljs-comment">// 1</span>
+a.pop( ) ; <span class="hljs-comment">// 2</span>
+a.pop( ) ; <span class="hljs-comment">// 3</span>
+a.pop( ) ; <span class="hljs-comment">// 4</span>
+a.pop( ) ; <span class="hljs-comment">// 5</span>
+
+a.length ; <span class="hljs-comment">// 0</span></code></pre>
+<h2 id="reference">Reference</h2>
 <ul>
 <li><a href="http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf">http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf</a></li>
 </ul></div></div></div></div></body></html>
