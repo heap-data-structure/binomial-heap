@@ -7,7 +7,7 @@
 	var definition = function definition(exports, undefined) {
 
 		/* js/src/BinomialHeap.js */
-		var __BinomialHeap__ = function __BinomialHeap__(BinomialTree) {
+		var BinomialHeap = function BinomialHeap(BinomialTree) {
 
 			var binomial_heap_push = function binomial_heap_push(predicate, list, tree, rank) {
 
@@ -338,7 +338,7 @@
 				tree.detach();
 			};
 
-			var BinomialHeap = function BinomialHeap(predicate) {
+			var Heap = function Heap(predicate) {
 
 				// the predicate to use to compare values
 
@@ -353,7 +353,7 @@
 				this.list = [];
 			};
 
-			BinomialHeap.prototype.head = function () {
+			Heap.prototype.head = function () {
 
 				var i, tree;
 
@@ -368,7 +368,7 @@
 				return tree.value;
 			};
 
-			BinomialHeap.prototype.headreference = function () {
+			Heap.prototype.headreference = function () {
 
 				var i, tree;
 
@@ -383,7 +383,7 @@
 				return tree;
 			};
 
-			BinomialHeap.prototype.pop = function () {
+			Heap.prototype.pop = function () {
 
 				if (this.length === 0) {
 					return undefined;
@@ -394,7 +394,7 @@
 				return binomial_heap_pop(this.predicate, this.list).value;
 			};
 
-			BinomialHeap.prototype.popreference = function () {
+			Heap.prototype.popreference = function () {
 
 				if (this.length === 0) {
 					return null;
@@ -405,7 +405,7 @@
 				return binomial_heap_pop(this.predicate, this.list).detach();
 			};
 
-			BinomialHeap.prototype.push = function (value) {
+			Heap.prototype.push = function (value) {
 
 				var tree;
 
@@ -418,7 +418,7 @@
 				return tree;
 			};
 
-			BinomialHeap.prototype.pushreference = function (tree) {
+			Heap.prototype.pushreference = function (tree) {
 
 				++this.length;
 
@@ -427,7 +427,7 @@
 				binomial_heap_push(this.predicate, this.list, tree, 0);
 			};
 
-			BinomialHeap.prototype.merge = function (other) {
+			Heap.prototype.merge = function (other) {
 
 				merge(this.predicate, this.list, other.list);
 
@@ -436,7 +436,7 @@
 				return this;
 			};
 
-			BinomialHeap.prototype.update = function (tree, value) {
+			Heap.prototype.update = function (tree, value) {
 
 				var d;
 
@@ -454,12 +454,12 @@
 				}
 			};
 
-			BinomialHeap.prototype.decreasekey = function (tree, value) {
+			Heap.prototype.decreasekey = function (tree, value) {
 
 				decreasekey(this.predicate, this.list, tree, value);
 			};
 
-			BinomialHeap.prototype.increasekey = function (tree, value) {
+			Heap.prototype.increasekey = function (tree, value) {
 
 				deletetree(this.predicate, this.list, tree);
 
@@ -468,17 +468,17 @@
 				binomial_heap_push(this.predicate, this.list, tree, 0);
 			};
 
-			BinomialHeap.prototype["delete"] = function (tree) {
+			Heap.prototype["delete"] = function (tree) {
 
 				--this.length;
 
 				deletetree(this.predicate, this.list, tree);
 			};
 
-			return BinomialHeap;
+			return Heap;
 		};
 
-		exports.__BinomialHeap__ = __BinomialHeap__;
+		exports.BinomialHeap = BinomialHeap;
 
 		/* js/src/BinomialTree.js */
 
@@ -568,7 +568,7 @@
 
 		/* js/src/LazyBinomialHeap.js */
 
-		var __LazyBinomialHeap__ = function __LazyBinomialHeap__(BinomialTree) {
+		var LazyBinomialHeap = function LazyBinomialHeap(BinomialTree) {
 
 			var lazy_binomial_heap_push = function lazy_binomial_heap_push(lazy, tree, rank) {
 
@@ -769,7 +769,7 @@
 				return opt;
 			};
 
-			var LazyBinomialHeap = function LazyBinomialHeap(predicate) {
+			var Heap = function Heap(predicate) {
 
 				// the predicate to use to compare values
 
@@ -788,7 +788,7 @@
 				this.lazy = [];
 			};
 
-			LazyBinomialHeap.prototype.pop = function () {
+			Heap.prototype.pop = function () {
 
 				if (this.length === 0) {
 					return undefined;
@@ -799,7 +799,7 @@
 				return lazy_binomial_heap_pop(this.predicate, this.list, this.lazy);
 			};
 
-			LazyBinomialHeap.prototype.push = function (value) {
+			Heap.prototype.push = function (value) {
 
 				++this.length;
 
@@ -808,7 +808,7 @@
 				return lazy_binomial_heap_push(this.lazy, new BinomialTree(value, []), 0);
 			};
 
-			LazyBinomialHeap.prototype.merge = function (other) {
+			Heap.prototype.merge = function (other) {
 				var i;
 				for (i = 0; i < other.lazy.length; ++i) {
 					this.lazy.push(other.lazy[i]);
@@ -818,10 +818,10 @@
 				return this;
 			};
 
-			return LazyBinomialHeap;
+			return Heap;
 		};
 
-		exports.__LazyBinomialHeap__ = __LazyBinomialHeap__;
+		exports.LazyBinomialHeap = LazyBinomialHeap;
 
 		return exports;
 	};

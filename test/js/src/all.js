@@ -4,9 +4,9 @@ var heapspec = require( "aureooms-js-heap-spec" ) ;
 var heapswithreferences = [
 
 
-	[ "__BinomialHeap__, BinomialTreeWithParent" , function ( compare ) {
+	[ "BinomialHeap, BinomialTreeWithParent" , function ( compare ) {
 
-		return new ( binomialheap.__BinomialHeap__( binomialheap.BinomialTreeWithParent ) )( compare ) ;
+		return new ( binomialheap.BinomialHeap( binomialheap.BinomialTreeWithParent ) )( compare ) ;
 
 	} ] ,
 
@@ -15,23 +15,23 @@ var heapswithreferences = [
 
 var heapswithoutreferences = [
 
-	[ "__BinomialHeap__, BinomialTree" , function ( compare ) {
+	[ "BinomialHeap, BinomialTree" , function ( compare ) {
 
-		return new ( binomialheap.__BinomialHeap__( binomialheap.BinomialTree ) )( compare ) ;
+		return new ( binomialheap.BinomialHeap( binomialheap.BinomialTree ) )( compare ) ;
 
 	} ] ,
 ] ;
 
 var lazyheaps = [
 
-	[ "__LazyBinomialHeap__, BinomialTree" , function ( compare ) {
+	[ "LazyBinomialHeap, BinomialTree" , function ( compare ) {
 
-		return new ( binomialheap.__LazyBinomialHeap__( binomialheap.BinomialTree ) )( compare ) ;
+		return new ( binomialheap.LazyBinomialHeap( binomialheap.BinomialTree ) )( compare ) ;
 
 	} ] ,
-	[ "__LazyBinomialHeap__, BinomialTreeWithParent" , function ( compare ) {
+	[ "LazyBinomialHeap, BinomialTreeWithParent" , function ( compare ) {
 
-		return new ( binomialheap.__LazyBinomialHeap__( binomialheap.BinomialTreeWithParent ) )( compare ) ;
+		return new ( binomialheap.LazyBinomialHeap( binomialheap.BinomialTreeWithParent ) )( compare ) ;
 
 	} ]
 ] ;

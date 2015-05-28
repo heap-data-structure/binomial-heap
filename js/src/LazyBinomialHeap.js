@@ -1,5 +1,5 @@
 
-var __LazyBinomialHeap__ = function ( BinomialTree ) {
+var LazyBinomialHeap = function ( BinomialTree ) {
 
 	var lazy_binomial_heap_push = function( lazy, tree, rank ){
 
@@ -220,7 +220,7 @@ var __LazyBinomialHeap__ = function ( BinomialTree ) {
 		return opt;
 	};
 
-	var LazyBinomialHeap = function ( predicate ) {
+	var Heap = function ( predicate ) {
 
 		// the predicate to use to compare values
 
@@ -244,7 +244,7 @@ var __LazyBinomialHeap__ = function ( BinomialTree ) {
 	};
 
 
-	LazyBinomialHeap.prototype.pop = function () {
+	Heap.prototype.pop = function () {
 
 		if ( this.length === 0 ) {
 			return undefined;
@@ -256,7 +256,7 @@ var __LazyBinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	LazyBinomialHeap.prototype.push = function (value) {
+	Heap.prototype.push = function (value) {
 
 		++this.length;
 
@@ -267,7 +267,7 @@ var __LazyBinomialHeap__ = function ( BinomialTree ) {
 	};
 
 
-	LazyBinomialHeap.prototype.merge = function ( other ) {
+	Heap.prototype.merge = function ( other ) {
 		var i;
 		for ( i = 0 ; i < other.lazy.length ; ++i ) {
 			this.lazy.push( other.lazy[i] );
@@ -277,7 +277,7 @@ var __LazyBinomialHeap__ = function ( BinomialTree ) {
 		return this;
 	};
 
-	return LazyBinomialHeap;
+	return Heap;
 };
 
-exports.__LazyBinomialHeap__ = __LazyBinomialHeap__;
+exports.LazyBinomialHeap = LazyBinomialHeap;

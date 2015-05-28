@@ -1,4 +1,4 @@
-var __BinomialHeap__ = function ( BinomialTree ) {
+var BinomialHeap = function ( BinomialTree ) {
 
 	var binomial_heap_push = function ( predicate, list, tree, rank ) {
 
@@ -357,7 +357,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	var BinomialHeap = function ( predicate ) {
+	var Heap = function ( predicate ) {
 
 		// the predicate to use to compare values
 
@@ -375,7 +375,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.head = function () {
+	Heap.prototype.head = function () {
 
 		var i, tree;
 
@@ -391,7 +391,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.headreference = function () {
+	Heap.prototype.headreference = function () {
 
 		var i, tree;
 
@@ -407,7 +407,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.pop = function () {
+	Heap.prototype.pop = function () {
 
 		if ( this.length === 0 ) {
 			return undefined;
@@ -419,7 +419,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.popreference = function () {
+	Heap.prototype.popreference = function () {
 
 		if ( this.length === 0 ) {
 			return null;
@@ -431,7 +431,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.push = function ( value ) {
+	Heap.prototype.push = function ( value ) {
 
 		var tree;
 
@@ -445,7 +445,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.pushreference = function ( tree ) {
+	Heap.prototype.pushreference = function ( tree ) {
 
 		++this.length;
 
@@ -455,7 +455,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.merge = function ( other ) {
+	Heap.prototype.merge = function ( other ) {
 
 		merge( this.predicate, this.list, other.list );
 
@@ -465,7 +465,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.update = function ( tree, value ) {
+	Heap.prototype.update = function ( tree, value ) {
 
 		var d;
 
@@ -489,13 +489,13 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.decreasekey = function ( tree, value ) {
+	Heap.prototype.decreasekey = function ( tree, value ) {
 
 		decreasekey( this.predicate, this.list, tree, value );
 
 	};
 
-	BinomialHeap.prototype.increasekey = function ( tree, value ) {
+	Heap.prototype.increasekey = function ( tree, value ) {
 
 		deletetree( this.predicate, this.list, tree );
 
@@ -505,7 +505,7 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	BinomialHeap.prototype.delete = function ( tree ) {
+	Heap.prototype.delete = function ( tree ) {
 
 		--this.length;
 
@@ -513,8 +513,8 @@ var __BinomialHeap__ = function ( BinomialTree ) {
 
 	};
 
-	return BinomialHeap;
+	return Heap;
 
 };
 
-exports.__BinomialHeap__ = __BinomialHeap__;
+exports.BinomialHeap = BinomialHeap;
