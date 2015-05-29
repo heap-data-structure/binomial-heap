@@ -27,7 +27,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 	};
 
-	var merge = function ( predicate, list, other ) {
+	var merge = function ( compare, list, other ) {
 
 		var i, len, carry;
 
@@ -88,7 +88,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 					// --> merge carry with current cell
 
 					else {
-						carry = carry.merge( predicate, list[i] );
+						carry = carry.merge( compare, list[i] );
 						list[i] = null;
 					}
 
@@ -108,7 +108,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 			else if ( carry !== null ) {
 
-				carry = carry.merge( predicate, other[i] );
+				carry = carry.merge( compare, other[i] );
 
 			}
 
@@ -117,7 +117,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 			else if ( list[i] !== null ) {
 
-				carry = list[i].merge( predicate, other[i] );
+				carry = list[i].merge( compare, other[i] );
 				list[i] = null;
 
 			}
@@ -143,25 +143,14 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 	};
 
 
-	var lazy_binomial_heap_pop = function ( predicate, list, lazy ) {
+	var lazy_binomial_heap_pop = function ( compare, list, lazy ) {
 
 		var i, j, len, opt, item, candidate, orphan;
-
-		len = lazy.length;
-
 
 		// amortized merge of
 		// stored values
 
-		for ( i = 0 ; i < len ; ++i ) {
-			merge( predicate, list, lazy[i] );
-		}
-
-
-		// clean up lazy list
-
-		lazy.splice( 0 );
-
+		while ( ! lazy.empty( ) ) merge( compare, list, lazy.pop( ) ) ;
 
 		// standard O(log n) optimum search method
 
@@ -190,7 +179,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 				candidate = item.value;
 
-				if ( predicate( candidate, opt ) < 0 ) {
+				if ( compare( candidate, opt ) < 0 ) {
 
 					i = j;
 					opt = candidate;
@@ -220,11 +209,11 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 		return opt;
 	};
 
-	var Heap = function ( predicate ) {
+	var Heap = function ( compare ) {
 
-		// the predicate to use to compare values
+		// the compare function to use to compare values
 
-		this.predicate = predicate;
+		this.compare = compare;
 
 
 		// number of elements in this heap
@@ -239,7 +228,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 		// list of binomial heaps waiting to be merged
 
-		this.lazy = [];
+		this.lazy = new LazyStack( ) ;
 
 	};
 
@@ -252,7 +241,7 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 		--this.length;
 
-		return lazy_binomial_heap_pop( this.predicate, this.list, this.lazy );
+		return lazy_binomial_heap_pop( this.compare, this.list, this.lazy );
 
 	};
 
@@ -268,13 +257,12 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 
 
 	Heap.prototype.merge = function ( other ) {
-		var i;
-		for ( i = 0 ; i < other.lazy.length ; ++i ) {
-			this.lazy.push( other.lazy[i] );
-		}
-		this.lazy.push( other.list );
-		this.length += other.length;
-		return this;
+
+		this.lazy.meld( other.lazy ) ;
+
+		this.length += other.length ;
+
+		return this ;
 	};
 
 	return Heap;

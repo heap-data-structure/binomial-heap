@@ -9,7 +9,7 @@
 		/* js/src/BinomialHeap.js */
 		var BinomialHeap = function BinomialHeap(BinomialTree) {
 
-			var binomial_heap_push = function binomial_heap_push(predicate, list, tree, rank) {
+			var binomial_heap_push = function binomial_heap_push(compare, list, tree, rank) {
 
 				var i, len;
 
@@ -30,7 +30,7 @@
 
 					// there is already a tree with this rank
 
-					tree = tree.merge(predicate, list[i]);
+					tree = tree.merge(compare, list[i]);
 					list[i] = null;
 				}
 
@@ -47,7 +47,7 @@
 				list[i] = tree;
 			};
 
-			var merge = function merge(predicate, list, other) {
+			var merge = function merge(compare, list, other) {
 
 				var i, len, carry;
 
@@ -106,7 +106,7 @@
 							// --> merge carry with current cell
 
 							else {
-								carry = carry.merge(predicate, list[i]);
+								carry = carry.merge(compare, list[i]);
 								list[i] = null;
 							}
 						}
@@ -124,7 +124,7 @@
 
 					else if (carry !== null) {
 
-						carry = carry.merge(predicate, other[i]);
+						carry = carry.merge(compare, other[i]);
 					}
 
 					// (1) other[i] != null and list[i] != null and carry = null
@@ -132,7 +132,7 @@
 
 					else if (list[i] !== null) {
 
-						carry = list[i].merge(predicate, other[i]);
+						carry = list[i].merge(compare, other[i]);
 						list[i] = null;
 					}
 
@@ -152,7 +152,7 @@
 				}
 			};
 
-			var find_min_index = function find_min_index(predicate, list, j, len) {
+			var find_min_index = function find_min_index(compare, list, j, len) {
 
 				var i, opt, item, candidate;
 
@@ -179,7 +179,7 @@
 
 						candidate = item.value;
 
-						if (predicate(candidate, opt) < 0) {
+						if (compare(candidate, opt) < 0) {
 
 							i = j;
 							opt = candidate;
@@ -190,7 +190,7 @@
 				return i;
 			};
 
-			var remove_head_at_index = function remove_head_at_index(predicate, list, i, len) {
+			var remove_head_at_index = function remove_head_at_index(compare, list, i, len) {
 
 				var orphans;
 
@@ -210,20 +210,20 @@
 				// we merge back the children of
 				// the removed tree into the heap
 
-				merge(predicate, list, orphans);
+				merge(compare, list, orphans);
 			};
 
-			var binomial_heap_pop = function binomial_heap_pop(predicate, list) {
+			var binomial_heap_pop = function binomial_heap_pop(compare, list) {
 
 				var i, len, tree;
 
 				len = list.length;
 
-				i = find_min_index(predicate, list, 0, len);
+				i = find_min_index(compare, list, 0, len);
 
 				tree = list[i];
 
-				remove_head_at_index(predicate, list, i, len);
+				remove_head_at_index(compare, list, i, len);
 
 				return tree;
 			};
@@ -298,7 +298,7 @@
 				}
 			};
 
-			var decreasekey = function decreasekey(predicate, list, tree, value) {
+			var decreasekey = function decreasekey(compare, list, tree, value) {
 
 				var d, tmp, parent;
 
@@ -309,7 +309,7 @@
 
 					while (true) {
 
-						d = predicate(value, parent.value);
+						d = compare(value, parent.value);
 
 						if (d >= 0) {
 							return;
@@ -329,20 +329,20 @@
 				}
 			};
 
-			var deletetree = function deletetree(predicate, list, tree) {
+			var deletetree = function deletetree(compare, list, tree) {
 
 				percolate_up(list, tree);
 
-				remove_head_at_index(predicate, list, tree.rank(), list.length);
+				remove_head_at_index(compare, list, tree.rank(), list.length);
 
 				tree.detach();
 			};
 
-			var Heap = function Heap(predicate) {
+			var Heap = function Heap(compare) {
 
-				// the predicate to use to compare values
+				// the compare function to use to compare values
 
-				this.predicate = predicate;
+				this.compare = compare;
 
 				// number of elements in this heap
 
@@ -361,7 +361,7 @@
 					return undefined;
 				}
 
-				i = find_min_index(this.predicate, this.list, 0, this.list.length);
+				i = find_min_index(this.compare, this.list, 0, this.list.length);
 
 				tree = this.list[i];
 
@@ -376,7 +376,7 @@
 					return null;
 				}
 
-				i = find_min_index(this.predicate, this.list, 0, this.list.length);
+				i = find_min_index(this.compare, this.list, 0, this.list.length);
 
 				tree = this.list[i];
 
@@ -391,7 +391,7 @@
 
 				--this.length;
 
-				return binomial_heap_pop(this.predicate, this.list).value;
+				return binomial_heap_pop(this.compare, this.list).value;
 			};
 
 			Heap.prototype.popreference = function () {
@@ -402,7 +402,7 @@
 
 				--this.length;
 
-				return binomial_heap_pop(this.predicate, this.list).detach();
+				return binomial_heap_pop(this.compare, this.list).detach();
 			};
 
 			Heap.prototype.push = function (value) {
@@ -424,12 +424,12 @@
 
 				// push an existing tree of rank 0
 
-				binomial_heap_push(this.predicate, this.list, tree, 0);
+				binomial_heap_push(this.compare, this.list, tree, 0);
 			};
 
 			Heap.prototype.merge = function (other) {
 
-				merge(this.predicate, this.list, other.list);
+				merge(this.compare, this.list, other.list);
 
 				this.length += other.length;
 
@@ -440,7 +440,7 @@
 
 				var d;
 
-				d = this.predicate(value, tree.value);
+				d = this.compare(value, tree.value);
 
 				if (d < 0) {
 					this.decreasekey(tree, value);
@@ -456,23 +456,23 @@
 
 			Heap.prototype.decreasekey = function (tree, value) {
 
-				decreasekey(this.predicate, this.list, tree, value);
+				decreasekey(this.compare, this.list, tree, value);
 			};
 
 			Heap.prototype.increasekey = function (tree, value) {
 
-				deletetree(this.predicate, this.list, tree);
+				deletetree(this.compare, this.list, tree);
 
 				tree.value = value;
 
-				binomial_heap_push(this.predicate, this.list, tree, 0);
+				binomial_heap_push(this.compare, this.list, tree, 0);
 			};
 
 			Heap.prototype["delete"] = function (tree) {
 
 				--this.length;
 
-				deletetree(this.predicate, this.list, tree);
+				deletetree(this.compare, this.list, tree);
 			};
 
 			return Heap;
@@ -593,7 +593,7 @@
 				lazy.push(sequence);
 			};
 
-			var merge = function merge(predicate, list, other) {
+			var merge = function merge(compare, list, other) {
 
 				var i, len, carry;
 
@@ -652,7 +652,7 @@
 							// --> merge carry with current cell
 
 							else {
-								carry = carry.merge(predicate, list[i]);
+								carry = carry.merge(compare, list[i]);
 								list[i] = null;
 							}
 						}
@@ -670,7 +670,7 @@
 
 					else if (carry !== null) {
 
-						carry = carry.merge(predicate, other[i]);
+						carry = carry.merge(compare, other[i]);
 					}
 
 					// (1) other[i] != null and list[i] != null and carry = null
@@ -678,7 +678,7 @@
 
 					else if (list[i] !== null) {
 
-						carry = list[i].merge(predicate, other[i]);
+						carry = list[i].merge(compare, other[i]);
 						list[i] = null;
 					}
 
@@ -698,22 +698,14 @@
 				}
 			};
 
-			var lazy_binomial_heap_pop = function lazy_binomial_heap_pop(predicate, list, lazy) {
+			var lazy_binomial_heap_pop = function lazy_binomial_heap_pop(compare, list, lazy) {
 
 				var i, j, len, opt, item, candidate, orphan;
-
-				len = lazy.length;
 
 				// amortized merge of
 				// stored values
 
-				for (i = 0; i < len; ++i) {
-					merge(predicate, list, lazy[i]);
-				}
-
-				// clean up lazy list
-
-				lazy.splice(0);
+				while (!lazy.empty()) merge(compare, list, lazy.pop());
 
 				// standard O(log n) optimum search method
 
@@ -742,7 +734,7 @@
 
 						candidate = item.value;
 
-						if (predicate(candidate, opt) < 0) {
+						if (compare(candidate, opt) < 0) {
 
 							i = j;
 							opt = candidate;
@@ -769,11 +761,11 @@
 				return opt;
 			};
 
-			var Heap = function Heap(predicate) {
+			var Heap = function Heap(compare) {
 
-				// the predicate to use to compare values
+				// the compare function to use to compare values
 
-				this.predicate = predicate;
+				this.compare = compare;
 
 				// number of elements in this heap
 
@@ -785,7 +777,7 @@
 
 				// list of binomial heaps waiting to be merged
 
-				this.lazy = [];
+				this.lazy = new LazyStack();
 			};
 
 			Heap.prototype.pop = function () {
@@ -796,7 +788,7 @@
 
 				--this.length;
 
-				return lazy_binomial_heap_pop(this.predicate, this.list, this.lazy);
+				return lazy_binomial_heap_pop(this.compare, this.list, this.lazy);
 			};
 
 			Heap.prototype.push = function (value) {
@@ -809,12 +801,11 @@
 			};
 
 			Heap.prototype.merge = function (other) {
-				var i;
-				for (i = 0; i < other.lazy.length; ++i) {
-					this.lazy.push(other.lazy[i]);
-				}
-				this.lazy.push(other.list);
+
+				this.lazy.meld(other.lazy);
+
 				this.length += other.length;
+
 				return this;
 			};
 
@@ -822,6 +813,67 @@
 		};
 
 		exports.LazyBinomialHeap = LazyBinomialHeap;
+
+		/* js/src/LazyList.js */
+
+		/**
+   * LazyStack#peek only valid if LazyStack#empty is false.
+   * LazyStack#shift only valid if LazyStack#empty is false.
+   */
+
+		var LazyStack = function LazyStack() {
+
+			this.top = null;
+			this.bottom = null;
+		};
+
+		LazyStack.prototype.empty = function () {
+
+			return this.top === null;
+		};
+
+		LazyStack.prototype.push = function (value) {
+
+			this.top = new LazyNode(value, this.top);
+
+			if (this.bottom === null) this.bottom = this.top;
+		};
+
+		/**
+   * Only valid if LazyStack#empty is false.
+   */
+
+		LazyStack.prototype.pop = function () {
+
+			var value;
+
+			value = this.top.value;
+
+			this.top = this.top.next;
+
+			if (this.top === null) this.bottom = null;
+
+			return value;
+		};
+
+		LazyStack.prototype.meld = function (other) {
+
+			if (this.bottom === null) this.top = other.top;else this.bottom.next = other.top;
+
+			this.bottom = other.bottom;
+		};
+
+		exports.LazyStack = LazyStack;
+
+		/* js/src/LazyNode.js */
+
+		var LazyNode = function LazyNode(value, next) {
+
+			this.value = value;
+			this.next = next;
+		};
+
+		exports.LazyNode = LazyNode;
 
 		return exports;
 	};

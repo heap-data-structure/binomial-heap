@@ -1,6 +1,6 @@
 var BinomialHeap = function ( BinomialTree ) {
 
-	var binomial_heap_push = function ( predicate, list, tree, rank ) {
+	var binomial_heap_push = function ( compare, list, tree, rank ) {
 
 		var i, len;
 
@@ -21,7 +21,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 			// there is already a tree with this rank
 
-			tree = tree.merge( predicate, list[i] );
+			tree = tree.merge( compare, list[i] );
 			list[i] = null;
 
 		}
@@ -41,7 +41,7 @@ var BinomialHeap = function ( BinomialTree ) {
 	};
 
 
-	var merge = function ( predicate, list, other ) {
+	var merge = function ( compare, list, other ) {
 
 		var i, len, carry;
 
@@ -102,7 +102,7 @@ var BinomialHeap = function ( BinomialTree ) {
 					// --> merge carry with current cell
 
 					else {
-						carry = carry.merge( predicate, list[i] );
+						carry = carry.merge( compare, list[i] );
 						list[i] = null;
 					}
 
@@ -122,7 +122,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 			else if ( carry !== null ) {
 
-				carry = carry.merge( predicate, other[i] );
+				carry = carry.merge( compare, other[i] );
 
 			}
 
@@ -131,7 +131,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 			else if ( list[i] !== null ) {
 
-				carry = list[i].merge( predicate, other[i] );
+				carry = list[i].merge( compare, other[i] );
 				list[i] = null;
 
 			}
@@ -156,7 +156,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 	};
 
-	var find_min_index = function ( predicate, list, j, len ) {
+	var find_min_index = function ( compare, list, j, len ) {
 
 		var i, opt, item, candidate;
 
@@ -183,7 +183,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 				candidate = item.value;
 
-				if ( predicate( candidate, opt ) < 0 ) {
+				if ( compare( candidate, opt ) < 0 ) {
 
 					i = j;
 					opt = candidate;
@@ -198,7 +198,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 	};
 
-	var remove_head_at_index = function ( predicate, list, i, len ) {
+	var remove_head_at_index = function ( compare, list, i, len ) {
 
 		var orphans;
 
@@ -218,21 +218,21 @@ var BinomialHeap = function ( BinomialTree ) {
 		// we merge back the children of
 		// the removed tree into the heap
 
-		merge( predicate, list, orphans );
+		merge( compare, list, orphans );
 
 	};
 
-	var binomial_heap_pop = function ( predicate, list ) {
+	var binomial_heap_pop = function ( compare, list ) {
 
 		var i, len, tree;
 
 		len = list.length;
 
-		i = find_min_index( predicate, list, 0, len );
+		i = find_min_index( compare, list, 0, len );
 
 		tree = list[i];
 
-		remove_head_at_index( predicate, list, i, len );
+		remove_head_at_index( compare, list, i, len );
 
 		return tree;
 	};
@@ -313,7 +313,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 	};
 
-	var decreasekey = function ( predicate, list, tree, value ) {
+	var decreasekey = function ( compare, list, tree, value ) {
 
 		var d, tmp, parent;
 
@@ -324,7 +324,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 			while ( true ) {
 
-				d = predicate( value, parent.value );
+				d = compare( value, parent.value );
 
 				if ( d >= 0 ) {
 					return;
@@ -347,21 +347,21 @@ var BinomialHeap = function ( BinomialTree ) {
 
 	};
 
-	var deletetree = function ( predicate, list, tree ) {
+	var deletetree = function ( compare, list, tree ) {
 
 		percolate_up( list, tree );
 
-		remove_head_at_index( predicate, list, tree.rank(), list.length );
+		remove_head_at_index( compare, list, tree.rank(), list.length );
 
 		tree.detach();
 
 	};
 
-	var Heap = function ( predicate ) {
+	var Heap = function ( compare ) {
 
-		// the predicate to use to compare values
+		// the compare function to use to compare values
 
-		this.predicate = predicate;
+		this.compare = compare;
 
 
 		// number of elements in this heap
@@ -383,7 +383,7 @@ var BinomialHeap = function ( BinomialTree ) {
 			return undefined;
 		}
 
-		i = find_min_index( this.predicate, this.list, 0, this.list.length );
+		i = find_min_index( this.compare, this.list, 0, this.list.length );
 
 		tree = this.list[i];
 
@@ -399,7 +399,7 @@ var BinomialHeap = function ( BinomialTree ) {
 			return null;
 		}
 
-		i = find_min_index( this.predicate, this.list, 0, this.list.length );
+		i = find_min_index( this.compare, this.list, 0, this.list.length );
 
 		tree = this.list[i];
 
@@ -415,7 +415,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 		--this.length;
 
-		return binomial_heap_pop( this.predicate, this.list ).value;
+		return binomial_heap_pop( this.compare, this.list ).value;
 
 	};
 
@@ -427,7 +427,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 		--this.length;
 
-		return binomial_heap_pop( this.predicate, this.list ).detach();
+		return binomial_heap_pop( this.compare, this.list ).detach();
 
 	};
 
@@ -451,13 +451,13 @@ var BinomialHeap = function ( BinomialTree ) {
 
 		// push an existing tree of rank 0
 
-		binomial_heap_push( this.predicate, this.list, tree, 0 );
+		binomial_heap_push( this.compare, this.list, tree, 0 );
 
 	};
 
 	Heap.prototype.merge = function ( other ) {
 
-		merge( this.predicate, this.list, other.list );
+		merge( this.compare, this.list, other.list );
 
 		this.length += other.length;
 
@@ -469,7 +469,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 		var d;
 
-		d = this.predicate( value, tree.value );
+		d = this.compare( value, tree.value );
 
 		if ( d < 0 ) {
 			this.decreasekey( tree, value );
@@ -491,17 +491,17 @@ var BinomialHeap = function ( BinomialTree ) {
 
 	Heap.prototype.decreasekey = function ( tree, value ) {
 
-		decreasekey( this.predicate, this.list, tree, value );
+		decreasekey( this.compare, this.list, tree, value );
 
 	};
 
 	Heap.prototype.increasekey = function ( tree, value ) {
 
-		deletetree( this.predicate, this.list, tree );
+		deletetree( this.compare, this.list, tree );
 
 		tree.value = value;
 
-		binomial_heap_push( this.predicate, this.list, tree, 0 );
+		binomial_heap_push( this.compare, this.list, tree, 0 );
 
 	};
 
@@ -509,7 +509,7 @@ var BinomialHeap = function ( BinomialTree ) {
 
 		--this.length;
 
-		deletetree( this.predicate, this.list, tree );
+		deletetree( this.compare, this.list, tree );
 
 	};
 
