@@ -4,7 +4,7 @@
 	"scripts": [
 		"js/dist/binomial-heap.js"
 	],
-	"version": "10.0.0",
+	"version": "10.0.1",
 	"description": "Binomial heap code bricks for JavaScript",
 	"main": "js/dist/binomial-heap.js",
 	"license": "AGPL-3.0"
