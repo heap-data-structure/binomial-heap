@@ -289,6 +289,46 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "depth": 1
         }
       ]
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-binomial-heap/js/src/LazyList.js",
+        "projectPath": "js/src/LazyList.js",
+        "targetPath": "LazyList",
+        "pageTitle": "LazyList",
+        "title": "LazyList"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-binomial-heap/js/src/LazyNode.js",
+        "projectPath": "js/src/LazyNode.js",
+        "targetPath": "LazyNode",
+        "pageTitle": "LazyNode",
+        "title": "LazyNode"
+      },
+      "depth": 1,
+      "outline": []
     }
   ];
 

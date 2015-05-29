@@ -12,7 +12,7 @@
 
 	};
 
-	<span class="hljs-keyword">var</span> merge = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> predicate, list, other </span>) </span>{
+	<span class="hljs-keyword">var</span> merge = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> compare, list, other </span>) </span>{
 
 		<span class="hljs-keyword">var</span> i, len, carry;
 
@@ -49,7 +49,7 @@ carry can be either null or not
 						carry = <span class="hljs-literal">null</span>;
 					}</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>(4) other[i] = null and list[i] != null and carry != null
 --&gt; merge carry with current cell</p></div></div><div class="code"><div class="wrapper">					<span class="hljs-keyword">else</span> {
-						carry = carry.merge( predicate, list[i] );
+						carry = carry.merge( compare, list[i] );
 						list[i] = <span class="hljs-literal">null</span>;
 					}
 
@@ -60,12 +60,12 @@ carry can be either null or not
 (2) other[i] != null and list[i] = null and carry != null
 --&gt; merge carry with other[i]</p></div></div><div class="code"><div class="wrapper">			<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ( carry !== <span class="hljs-literal">null</span> ) {
 
-				carry = carry.merge( predicate, other[i] );
+				carry = carry.merge( compare, other[i] );
 
 			}</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>(1) other[i] != null and list[i] != null and carry = null
 --&gt; merge current cell with other[i]</p></div></div><div class="code"><div class="wrapper">			<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ( list[i] !== <span class="hljs-literal">null</span> ) {
 
-				carry = list[i].merge( predicate, other[i] );
+				carry = list[i].merge( compare, other[i] );
 				list[i] = <span class="hljs-literal">null</span>;
 
 			}</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>(3) other[i] != null and list[i] = null and carry = null
@@ -82,14 +82,10 @@ carry can be either null or not
 	};
 
 
-	<span class="hljs-keyword">var</span> lazy_binomial_heap_pop = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> predicate, list, lazy </span>) </span>{
+	<span class="hljs-keyword">var</span> lazy_binomial_heap_pop = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> compare, list, lazy </span>) </span>{
 
-		<span class="hljs-keyword">var</span> i, j, len, opt, item, candidate, orphan;
-
-		len = lazy.length;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>amortized merge of
-stored values</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">for</span> ( i = <span class="hljs-number">0</span> ; i &lt; len ; ++i ) {
-			merge( predicate, list, lazy[i] );
-		}</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>clean up lazy list</p></div></div><div class="code"><div class="wrapper">		lazy.splice( <span class="hljs-number">0</span> );</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>standard O(log n) optimum search method</p></div></div><div class="code"><div class="wrapper">		len = list.length;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>there MUST be at least one
+		<span class="hljs-keyword">var</span> i, j, len, opt, item, candidate, orphan;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>amortized merge of
+stored values</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">while</span> ( ! lazy.empty( ) ) merge( compare, list, lazy.pop( ) ) ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>standard O(log n) optimum search method</p></div></div><div class="code"><div class="wrapper">		len = list.length;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>there MUST be at least one
 non null element in this list
 we look for the first one</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">for</span> ( j = <span class="hljs-number">0</span> ; j &lt; len - <span class="hljs-number">1</span> &amp;&amp; list[j] === <span class="hljs-literal">null</span> ; ++j ) ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>here j is necessarily &lt; len
 and list[j] is non null</p></div></div><div class="code"><div class="wrapper">		i = j;
@@ -102,7 +98,7 @@ is not a better candidate</p></div></div><div class="code"><div class="wrapper">
 
 				candidate = item.value;
 
-				<span class="hljs-keyword">if</span> ( predicate( candidate, opt ) &lt; <span class="hljs-number">0</span> ) {
+				<span class="hljs-keyword">if</span> ( compare( candidate, opt ) &lt; <span class="hljs-number">0</span> ) {
 
 					i = j;
 					opt = candidate;
@@ -124,7 +120,7 @@ lazy list</p></div></div><div class="code"><div class="wrapper">		lazy.push( orp
 		<span class="hljs-keyword">return</span> opt;
 	};
 
-	<span class="hljs-keyword">var</span> Heap = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> predicate </span>) </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>the predicate to use to compare values</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.predicate = predicate;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>number of elements in this heap</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.length = <span class="hljs-number">0</span>;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>list of binomial trees</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.list = [];</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>list of binomial heaps waiting to be merged</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.lazy = [];
+	<span class="hljs-keyword">var</span> Heap = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> compare </span>) </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>the compare function to use to compare values</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.compare = compare;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>number of elements in this heap</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.length = <span class="hljs-number">0</span>;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>list of binomial trees</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.list = [];</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>list of binomial heaps waiting to be merged</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">this</span>.lazy = <span class="hljs-keyword">new</span> LazyStack( ) ;
 
 	};
 
@@ -137,7 +133,7 @@ lazy list</p></div></div><div class="code"><div class="wrapper">		lazy.push( orp
 
 		--<span class="hljs-keyword">this</span>.length;
 
-		<span class="hljs-keyword">return</span> lazy_binomial_heap_pop( <span class="hljs-keyword">this</span>.predicate, <span class="hljs-keyword">this</span>.list, <span class="hljs-keyword">this</span>.lazy );
+		<span class="hljs-keyword">return</span> lazy_binomial_heap_pop( <span class="hljs-keyword">this</span>.compare, <span class="hljs-keyword">this</span>.list, <span class="hljs-keyword">this</span>.lazy );
 
 	};
 
@@ -149,13 +145,12 @@ lazy list</p></div></div><div class="code"><div class="wrapper">		lazy.push( orp
 
 
 	Heap.prototype.merge = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> other </span>) </span>{
-		<span class="hljs-keyword">var</span> i;
-		<span class="hljs-keyword">for</span> ( i = <span class="hljs-number">0</span> ; i &lt; other.lazy.length ; ++i ) {
-			<span class="hljs-keyword">this</span>.lazy.push( other.lazy[i] );
-		}
-		<span class="hljs-keyword">this</span>.lazy.push( other.list );
-		<span class="hljs-keyword">this</span>.length += other.length;
-		<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+
+		<span class="hljs-keyword">this</span>.lazy.meld( other.lazy ) ;
+
+		<span class="hljs-keyword">this</span>.length += other.length ;
+
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span> ;
 	};
 
 	<span class="hljs-keyword">return</span> Heap;
