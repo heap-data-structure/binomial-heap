@@ -1,8 +1,8 @@
 [js-binomial-heap](http://aureooms.github.io/js-binomial-heap)
 ==
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/aureooms/js-binomial-heap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Binomial heap code bricks in JavaScript.
+Binomial heap code bricks in JavaScript. Parent is
+[aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
 //
