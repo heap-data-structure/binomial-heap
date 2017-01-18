@@ -10,10 +10,6 @@
   "index": "./README.md",
   "package": "./package.json",
   "title": "aureooms/js-binomial-heap",
-  "test": {
-    "type": "ava",
-    "source": "./test/src"
-  },
   "manual": {
     "overview": [
       "./doc/manual/overview.md"
