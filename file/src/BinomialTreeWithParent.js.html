@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-binomial-heap API Document</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/BinomialTreeWithParent.js | aureooms/js-binomial-heap API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -44,34 +44,57 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-js-binomial-heap-http-aureooms-github-io-js-binomial-heap-"><a href="http://aureooms.github.io/js-binomial-heap">js-binomial-heap</a></h1>
-<p>Binomial heap data structures for JavaScript.
-Parent is <a href="https://github.com/aureooms/js-heap">aureooms/js-heap</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">//
-//    o       o           o--.             o
-//    |\      |\          |\  \           /|\
-//    o o  +  o o    =    o o  o    =    o o o
-//      |       |           |  |\          | |\
-//      o       o           o  o o         o o o
-//                               |             |
-//                               o             o
-//</code>
+<div class="content" data-ice="content"><h1 data-ice="title">src/BinomialTreeWithParent.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+
+export default function BinomialTreeWithParent ( value, children ) {
+	this.value = value;
+	this.children = children;
+	this.parent = null;
+}
+
+BinomialTreeWithParent.prototype.rank = function () {
+	return this.children.length;
+};
+
+/**
+ * /!\ Can only be used to merge two trees of the same rank.
+ * /!\ Modifies both trees
+ */
+
+BinomialTreeWithParent.prototype.merge = function ( predicate, other ) {
+
+	if ( predicate( this.value, other.value ) &lt;= 0 ) {
+		this.children = this.children.concat( other );
+		other.parent = this;
+		return this;
+	}
+
+	else {
+		other.children = other.children.concat( this );
+		this.parent = other;
+		return other;
+	}
+
+};
+
+/**
+ * Method used to reset a tree element in order to reuse it
+ * somewhere else, e.g. insert it back in the same or a new
+ * heap.
+ */
+
+BinomialTreeWithParent.prototype.detach = function () {
+	this.children.splice( 0 );
+	this.parent = null;
+	return this;
+};
+
+BinomialTreeWithParent.prototype.setparent = function ( parent ) {
+	this.parent = parent;
+};
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-binomial-heap/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-binomial-heap.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/v/aureooms-js-binomial-heap.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-binomial-heap"><img src="http://img.shields.io/travis/aureooms/js-binomial-heap.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-binomial-heap"><img src="http://img.shields.io/coveralls/aureooms/js-binomial-heap.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-binomial-heap#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-binomial-heap.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-binomial-heap#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-binomial-heap.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-binomial-heap"><img src="http://img.shields.io/codeclimate/github/aureooms/js-binomial-heap.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/dm/aureooms-js-binomial-heap.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-binomial-heap/issues"><img src="http://img.shields.io/github/issues/aureooms/js-binomial-heap.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-binomial-heap/source.html"><img src="https://aureooms.github.io/js-binomial-heap/badge.svg" alt="Documentation"></a></p>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf">http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf</a></li>
-</ul>
-</div>
+
 </div>
 
 <footer class="footer">
