@@ -1,16 +1,16 @@
-
+import LazyNode from './LazyNode' ;
 
 /**
  * LazyStack#peek only valid if LazyStack#empty is false.
  * LazyStack#shift only valid if LazyStack#empty is false.
  */
 
-var LazyStack = function ( ) {
+export default function LazyStack ( ) {
 
 	this.top = null ;
 	this.bottom = null ;
 
-} ;
+}
 
 LazyStack.prototype.empty = function ( ) {
 
@@ -54,5 +54,3 @@ LazyStack.prototype.meld = function ( other ) {
 	this.bottom = other.bottom ;
 
 } ;
-
-exports.LazyStack = LazyStack ;

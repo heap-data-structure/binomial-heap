@@ -1,9 +1,9 @@
 
 
-var BinomialTree = function ( value, children ) {
+export default function BinomialTree ( value, children ) {
 	this.value = value;
 	this.children = children;
-};
+}
 
 /**
  * /!\ Can only be used to merge two trees of the same rank.
@@ -38,5 +38,3 @@ BinomialTree.prototype.detach = function () {
 BinomialTree.prototype.setparent = function ( parent ) {
 	// we do not keep track of any parent here
 };
-
-exports.BinomialTree = BinomialTree;

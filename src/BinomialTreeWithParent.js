@@ -1,10 +1,10 @@
 
 
-var BinomialTreeWithParent = function ( value, children ) {
+export default function BinomialTreeWithParent ( value, children ) {
 	this.value = value;
 	this.children = children;
 	this.parent = null;
-};
+}
 
 BinomialTreeWithParent.prototype.rank = function () {
 	return this.children.length;
@@ -46,5 +46,3 @@ BinomialTreeWithParent.prototype.detach = function () {
 BinomialTreeWithParent.prototype.setparent = function ( parent ) {
 	this.parent = parent;
 };
-
-exports.BinomialTreeWithParent = BinomialTreeWithParent;

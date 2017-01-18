@@ -1,4 +1,4 @@
-var BinomialHeap = function ( BinomialTree ) {
+export default function BinomialHeap ( BinomialTree ) {
 
 	var binomial_heap_push = function ( compare, list, tree, rank ) {
 
@@ -515,6 +515,4 @@ var BinomialHeap = function ( BinomialTree ) {
 
 	return Heap;
 
-};
-
-exports.BinomialHeap = BinomialHeap;
+}

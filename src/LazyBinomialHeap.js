@@ -1,5 +1,6 @@
+import LazyStack from './LazyStack' ;
 
-var LazyBinomialHeap = function ( BinomialTree ) {
+export default function LazyBinomialHeap ( BinomialTree ) {
 
 	var lazy_binomial_heap_push = function( lazy, tree, rank ){
 
@@ -266,6 +267,4 @@ var LazyBinomialHeap = function ( BinomialTree ) {
 	};
 
 	return Heap;
-};
-
-exports.LazyBinomialHeap = LazyBinomialHeap;
+}
