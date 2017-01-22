@@ -1,8 +1,11 @@
-[js-binomial-heap](http://aureooms.github.io/js-binomial-heap)
+[@aureooms/js-binomial-heap](http://aureooms.github.io/js-binomial-heap)
 ==
 
+<img src="https://cdn.rawgit.com/aureooms/js-binomial-heap/master/media/sketch.svg" width="864">
+
 Binomial heap data structures for JavaScript.
-Parent is [aureooms/js-heap](https://github.com/aureooms/js-heap).
+See [docs](https://aureooms.github.io/js-binomial-heap/index.html).
+Parent is [@aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
 //
@@ -14,6 +17,12 @@ Parent is [aureooms/js-heap](https://github.com/aureooms/js-heap).
 //                               |             |
 //                               o             o
 //
+let heaps = [
+  new ( BinomialHeap( BinomialTreeWithParent ) )( compare.increasing ) ,
+  new ( BinomialHeap( BinomialTree ) )( compare.increasing ) ,
+  new ( LazyBinomialHeap( BinomialTree ) )( compare.increasing ) ,
+  new ( LazyBinomialHeap( BinomialTreeWithParent ) )( compare.increasing ) ,
+] ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-binomial-heap.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-binomial-heap/master/LICENSE)
