@@ -44,9 +44,11 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-js-binomial-heap-http-aureooms-github-io-js-binomial-heap-"><a href="http://aureooms.github.io/js-binomial-heap">js-binomial-heap</a></h1>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-binomial-heap-http-aureooms-github-io-js-binomial-heap-"><a href="http://aureooms.github.io/js-binomial-heap">@aureooms/js-binomial-heap</a></h1>
+<p><img src="https://cdn.rawgit.com/aureooms/js-binomial-heap/master/media/sketch.svg" width="864"></p>
 <p>Binomial heap data structures for JavaScript.
-Parent is <a href="https://github.com/aureooms/js-heap">aureooms/js-heap</a>.</p>
+See <a href="https://aureooms.github.io/js-binomial-heap/index.html">docs</a>.
+Parent is <a href="https://github.com/aureooms/js-heap">@aureooms/js-heap</a>.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">//
 //    o       o           o--.             o
 //    |\      |\          |\  \           /|\
@@ -55,7 +57,13 @@ Parent is <a href="https://github.com/aureooms/js-heap">aureooms/js-heap</a>.</p
 //      o       o           o  o o         o o o
 //                               |             |
 //                               o             o
-//</code>
+//
+let heaps = [
+  new ( BinomialHeap( BinomialTreeWithParent ) )( compare.increasing ) ,
+  new ( BinomialHeap( BinomialTree ) )( compare.increasing ) ,
+  new ( LazyBinomialHeap( BinomialTree ) )( compare.increasing ) ,
+  new ( LazyBinomialHeap( BinomialTreeWithParent ) )( compare.increasing ) ,
+] ;</code>
 </code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-binomial-heap/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-binomial-heap.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/v/aureooms-js-binomial-heap.svg?style=flat" alt="NPM version"></a>
