@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const binomialheap = require( 'aureooms-js-binomial-heap' ) ;
+const binomialheap = require( '@aureooms/js-binomial-heap' ) ;
 // or
-import binomialheap from 'aureooms-js-binomial-heap' ;
+import binomialheap from '@aureooms/js-binomial-heap' ;
 ```

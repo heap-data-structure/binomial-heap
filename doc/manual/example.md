@@ -26,7 +26,7 @@
 //      # push( value )
 //      # merge( other )
 
-let compare = require( "aureooms-js-compare" ) ;
+let compare = require( "@aureooms/js-compare" ) ;
 
 let Heap = binomialheap. ... ( binomialheap. ... ) ;
 
