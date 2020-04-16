@@ -29,17 +29,17 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-functools/-/js-functools-2.0.3.tgz#5139d6245278193da4cf21c44666797bf40a1d6e"
   integrity sha1-UTnWJFJ4GT2kzyHERmZ5e/QKHW4=
 
-"@aureooms/js-heap-spec@10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-heap-spec/-/js-heap-spec-10.0.1.tgz#6f18a86cb87c73dab5a225e444e7ca810b88df71"
-  integrity sha1-bxiobLh8c9q1oiXkROfKgQuI33E=
+"@aureooms/js-heap-spec@13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-heap-spec/-/js-heap-spec-13.0.0.tgz#3869724fb73db8e72e5e21c7c4dd36f2d0704217"
+  integrity sha512-sLwVRip6ggV4h8gbrNd2zxxso6ZGl8n631AphYj6vZ8VnV5M9J1+6NVclxRgjPVoKyJdAViNuZzglxxGFqYyNA==
   dependencies:
     "@aureooms/js-compare" "^1.4.5"
     "@aureooms/js-functools" "^2.0.3"
-    "@aureooms/js-itertools" "^3.1.1"
+    "@aureooms/js-itertools" "^3.4.0"
     "@aureooms/js-random" "^2.0.0"
 
-"@aureooms/js-itertools@3.4.0", "@aureooms/js-itertools@^3.1.1":
+"@aureooms/js-itertools@3.4.0", "@aureooms/js-itertools@^3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-itertools/-/js-itertools-3.4.0.tgz#2140cd62e5ae706402afef2e82f924658e0403e2"
   integrity sha512-lVOnOr1Fo+fdaT20wBEz2q+KOQ145yFB0WNbqY6FkeB2xQrW+Xi9bzwG1kQ9fP5eOQnhyXvBdpYK90AkkZufmA==
