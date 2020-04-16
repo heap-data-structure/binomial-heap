@@ -1,3 +1,4 @@
+# Examples
 
 ```js
 // can choose between 3 different implementations
