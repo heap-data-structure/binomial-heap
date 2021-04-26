@@ -1,10 +1,10 @@
-[@aureooms/js-binomial-heap](http://aureooms.github.io/js-binomial-heap)
+[@aureooms/js-binomial-heap](http://make-github-pseudonymous-again.github.io/js-binomial-heap)
 ==
 
 <img src="https://cdn.rawgit.com/aureooms/js-binomial-heap/main/media/sketch.svg" width="864">
 
 Binomial heap data structures for JavaScript.
-See [docs](https://aureooms.github.io/js-binomial-heap/index.html).
+See [docs](https://make-github-pseudonymous-again.github.io/js-binomial-heap/index.html).
 Parent is [@aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
@@ -34,7 +34,7 @@ let heaps = [
 [![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-binomial-heap.svg?style=flat)](https://codeclimate.com/github/aureooms/js-binomial-heap)
 [![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-binomial-heap.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-binomial-heap)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-binomial-heap.svg?style=flat)](https://github.com/aureooms/js-binomial-heap/issues)
-[![Documentation](https://aureooms.github.io/js-binomial-heap/badge.svg)](https://aureooms.github.io/js-binomial-heap/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-binomial-heap/badge.svg)](https://make-github-pseudonymous-again.github.io/js-binomial-heap/source.html)
 
 ## Reference
 
