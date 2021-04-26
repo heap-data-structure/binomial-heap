@@ -25,7 +25,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-binomial-heap/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-binomial-heap/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -63,7 +63,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-binomial-heap.git",
+    "url": "https://github.com/make-github-pseudonymous-again/js-binomial-heap.git",
     "type": "git"
   },
   "scripts": {
