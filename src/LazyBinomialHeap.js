@@ -1,4 +1,4 @@
-import LazyStack from './LazyStack' ;
+import LazyStack from './LazyStack.js' ;
 
 export default function LazyBinomialHeap ( BinomialTree ) {
 

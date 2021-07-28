@@ -1,9 +1,9 @@
-import BinomialHeap from './BinomialHeap' ;
-import BinomialTree from './BinomialTree' ;
-import BinomialTreeWithParent from './BinomialTreeWithParent' ;
-import LazyBinomialHeap from './LazyBinomialHeap' ;
-import LazyNode from './LazyNode' ;
-import LazyStack from './LazyStack' ;
+import BinomialHeap from './BinomialHeap.js' ;
+import BinomialTree from './BinomialTree.js' ;
+import BinomialTreeWithParent from './BinomialTreeWithParent.js' ;
+import LazyBinomialHeap from './LazyBinomialHeap.js' ;
+import LazyNode from './LazyNode.js' ;
+import LazyStack from './LazyStack.js' ;
 
 export default {
 	BinomialHeap ,

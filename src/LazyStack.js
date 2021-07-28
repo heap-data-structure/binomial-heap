@@ -1,4 +1,4 @@
-import LazyNode from './LazyNode' ;
+import LazyNode from './LazyNode.js' ;
 
 /**
  * LazyStack#peek only valid if LazyStack#empty is false.
