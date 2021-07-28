@@ -27,32 +27,39 @@
 //      # push( value )
 //      # merge( other )
 
-let compare = require( "@aureooms/js-compare" ) ;
+import {
+  BinomialHeap,
+  LazyBinomialHeap,
+  BinomialTree,
+  BinomialTreeWithParent,
+} from '@heap-data-structure/binomial-heap';
 
-let Heap = binomialheap. ... ( binomialheap. ... ) ;
+import {increasing} from '@total-order/primitive';
 
-let a = new Heap( compare.increasing ) ;
-let b = new Heap( compare.increasing ) ;
+let Heap = LazyBinomialHeap(BinomialTree);
 
-a.push( 5 ) ;
-a.push( 1 ) ;
-a.push( 4 ) ;
-b.push( 3 ) ;
-b.push( 2 ) ;
+let a = new Heap(increasing) ;
+let b = new Heap(increasing) ;
 
-a.length ; // 3
-b.length ; // 2
+a.push(5);
+a.push(1);
+a.push(4);
+b.push(3);
+b.push(2);
 
-a.merge( b ) ;
-delete b ;
+a.length; // 3
+b.length; // 2
 
-a.length ; // 5
+a.merge(b);
+delete b;
 
-a.pop( ) ; // 1
-a.pop( ) ; // 2
-a.pop( ) ; // 3
-a.pop( ) ; // 4
-a.pop( ) ; // 5
+a.length; // 5
 
-a.length ; // 0
+a.pop(); // 1
+a.pop(); // 2
+a.pop(); // 3
+a.pop(); // 4
+a.pop(); // 5
+
+a.length; // 0
 ```

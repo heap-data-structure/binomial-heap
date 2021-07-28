@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-binomial-heap",
+  "name": "@heap-data-structure/binomial-heap",
   "description": "Binomial heap data structures for JavaScript",
   "version": "11.0.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "files": [
       "test/src/**/*"
@@ -25,14 +25,11 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-binomial-heap/issues"
+    "url": "https://github.com/heap-data-structure/binomial-heap/issues"
   },
   "dependencies": {},
   "devDependencies": {
-    "@aureooms/js-array": "4.0.0",
-    "@aureooms/js-functools": "2.0.3",
-    "@aureooms/js-heap-spec": "15.0.3",
-    "@aureooms/js-itertools": "4.1.0",
+    "@heap-data-structure/specification": "16.0.0",
     "@babel/cli": "7.13.10",
     "@babel/core": "7.13.10",
     "@babel/polyfill": "7.12.1",
@@ -51,7 +48,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-binomial-heap/",
+  "homepage": "http://heap-data-structure.github.io/binomial-heap",
   "keywords": [
     "binomial",
     "data",
@@ -63,7 +60,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-binomial-heap.git",
+    "url": "https://github.com/heap-data-structure/binomial-heap.git",
     "type": "git"
   },
   "scripts": {

@@ -10,7 +10,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const binomialheap = require( '@aureooms/js-binomial-heap' ) ;
+const binomialheap = require( '@heap-data-structure/binomial-heap' ) ;
 // or
-import binomialheap from '@aureooms/js-binomial-heap' ;
+import binomialheap from '@heap-data-structure/binomial-heap' ;
 ```

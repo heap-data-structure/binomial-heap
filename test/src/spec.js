@@ -1,6 +1,6 @@
 import ava from 'ava' ;
 
-import * as spec from '@aureooms/js-heap-spec' ;
+import * as spec from '@heap-data-structure/specification' ;
 
 import {
 	BinomialHeap,
