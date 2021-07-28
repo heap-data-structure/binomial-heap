@@ -93,6 +93,7 @@
       ]
     ],
     "env": {
+      "debug": {},
       "cover": {
         "sourceMaps": "both",
         "presets": [
