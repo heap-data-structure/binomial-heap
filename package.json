@@ -38,7 +38,6 @@
   "devDependencies": {
     "@babel/cli": "7.13.10",
     "@babel/core": "7.13.10",
-    "@babel/polyfill": "7.12.1",
     "@babel/preset-env": "7.13.10",
     "@babel/register": "7.13.8",
     "@heap-data-structure/specification": "16.0.0",
@@ -56,6 +55,7 @@
     "fixpack": "4.0.0",
     "np": "6.5.0",
     "power-assert": "1.6.1",
+    "regenerator-runtime": "0.13.9",
     "xo": "0.42.0"
   },
   "ava": {
@@ -63,7 +63,7 @@
       "test/src/**/*"
     ],
     "require": [
-      "@babel/polyfill",
+      "regenerator-runtime/runtime",
       "@babel/register"
     ],
     "timeout": "1m",
