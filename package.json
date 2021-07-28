@@ -2,7 +2,57 @@
   "name": "@heap-data-structure/binomial-heap",
   "description": "Binomial heap data structures for JavaScript",
   "version": "11.0.0",
+  "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
+  "homepage": "https://heap-data-structure.github.io/binomial-heap",
+  "repository": {
+    "url": "https://github.com/heap-data-structure/binomial-heap",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/heap-data-structure/binomial-heap/issues"
+  },
+  "keywords": [
+    "binomial",
+    "data",
+    "heap",
+    "javascript",
+    "js",
+    "structure"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "esdoc": "esdoc",
+    "lint-config": "fixpack --dryRun",
+    "lint-config-and-fix": "fixpack || fixpack",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.10",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.13.10",
+    "@babel/register": "7.13.8",
+    "@heap-data-structure/specification": "16.0.0",
+    "ava": "3.15.0",
+    "coveralls": "3.1.0",
+    "esdoc": "1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "1.0.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "np": "6.5.0",
+    "nyc": "15.1.0"
+  },
   "ava": {
     "files": [
       "test/src/**/*"
@@ -23,55 +73,5 @@
         "sourceMaps": "inline"
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/heap-data-structure/binomial-heap/issues"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@heap-data-structure/specification": "16.0.0",
-    "@babel/cli": "7.13.10",
-    "@babel/core": "7.13.10",
-    "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.13.10",
-    "@babel/register": "7.13.8",
-    "ava": "3.15.0",
-    "coveralls": "3.1.0",
-    "esdoc": "1.1.0",
-    "esdoc-ecmascript-proposal-plugin": "1.0.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "np": "6.5.0",
-    "nyc": "15.1.0",
-    "fixpack": "4.0.0"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://heap-data-structure.github.io/binomial-heap",
-  "keywords": [
-    "binomial",
-    "data",
-    "heap",
-    "javascript",
-    "js",
-    "structure"
-  ],
-  "license": "AGPL-3.0",
-  "main": "lib/index.js",
-  "repository": {
-    "url": "https://github.com/heap-data-structure/binomial-heap",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "babel src -d lib",
-    "cover": "nyc --reporter=lcov npm test",
-    "esdoc": "esdoc",
-    "prepare": "npm run build",
-    "release": "np",
-    "test": "ava",
-    "lint-config-and-fix": "fixpack || fixpack",
-    "lint-config": "fixpack --dryRun"
   }
 }
