@@ -37,16 +37,20 @@ let heaps = [
 ] ;
 ```
 
-[![License](https://img.shields.io/github/license/heap-data-structure/binomial-heap.svg?style=flat)](https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@heap-data-structure/binomial-heap.svg?style=flat)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)
-[![Build Status](https://img.shields.io/travis/heap-data-structure/binomial-heap.svg?style=flat)](https://travis-ci.com/heap-data-structure/binomial-heap)
-[![Coverage Status](https://img.shields.io/coveralls/heap-data-structure/binomial-heap.svg?style=flat)](https://coveralls.io/r/heap-data-structure/binomial-heap)
-[![Dependencies Status](https://img.shields.io/david/heap-data-structure/binomial-heap.svg?style=flat)](https://david-dm.org/heap-data-structure/binomial-heap#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/heap-data-structure/binomial-heap.svg?style=flat)](https://david-dm.org/heap-data-structure/binomial-heap#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/heap-data-structure/binomial-heap.svg?style=flat)](https://codeclimate.com/github/heap-data-structure/binomial-heap)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@heap-data-structure/binomial-heap.svg?style=flat)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)
-[![GitHub issues](https://img.shields.io/github/issues/heap-data-structure/binomial-heap.svg?style=flat)](https://github.com/heap-data-structure/binomial-heap/issues)
-[![Documentation](https://heap-data-structure.github.io/binomial-heapbadge.svg)](https://heap-data-structure.github.io/binomial-heapsource.html)
+[![License](https://img.shields.io/github/license/heap-data-structure/binomial-heap.svg)](https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@heap-data-structure/binomial-heap.svg)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)
+[![Tests](https://img.shields.io/github/workflow/status/heap-data-structure/binomial-heap/ci:test?event=push&label=tests)](https://github.com/heap-data-structure/binomial-heap/actions/workflows/ci:test.yml?query=branch:main)
+[![Dependencies](https://img.shields.io/david/heap-data-structure/binomial-heap.svg)](https://david-dm.org/heap-data-structure/binomial-heap)
+[![Dev dependencies](https://img.shields.io/david/dev/heap-data-structure/binomial-heap.svg)](https://david-dm.org/heap-data-structure/binomial-heap?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/heap-data-structure/binomial-heap.svg)](https://github.com/heap-data-structure/binomial-heap/issues)
+[![Downloads](https://img.shields.io/npm/dm/@heap-data-structure/binomial-heap.svg)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/heap-data-structure/binomial-heap.svg)](https://codeclimate.com/github/heap-data-structure/binomial-heap/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/heap-data-structure/binomial-heap.svg)](https://codeclimate.com/github/heap-data-structure/binomial-heap/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/heap-data-structure/binomial-heap/main.svg)](https://codecov.io/gh/heap-data-structure/binomial-heap)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/heap-data-structure/binomial-heap.svg)](https://codeclimate.com/github/heap-data-structure/binomial-heap/trends/technical_debt)
+[![Documentation](https://heap-data-structure.github.io/binomial-heap/badge.svg)](https://heap-data-structure.github.io/binomial-heap/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@heap-data-structure/binomial-heap)](https://bundlephobia.com/result?p=@heap-data-structure/binomial-heap)
 
 ## :scroll: Reference
 
