@@ -13,4 +13,4 @@ jspm_packages
 .nyc_output
 
 # Documentation
-gh-pages
+/gh-pages
