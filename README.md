@@ -39,7 +39,7 @@ let heaps = [
 
 [![License](https://img.shields.io/github/license/heap-data-structure/binomial-heap.svg?style=flat)](https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@heap-data-structure/binomial-heap.svg?style=flat)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)
-[![Build Status](https://img.shields.io/travis/heap-data-structure/binomial-heap.svg?style=flat)](https://travis-ci.org/heap-data-structure/binomial-heap)
+[![Build Status](https://img.shields.io/travis/heap-data-structure/binomial-heap.svg?style=flat)](https://travis-ci.com/heap-data-structure/binomial-heap)
 [![Coverage Status](https://img.shields.io/coveralls/heap-data-structure/binomial-heap.svg?style=flat)](https://coveralls.io/r/heap-data-structure/binomial-heap)
 [![Dependencies Status](https://img.shields.io/david/heap-data-structure/binomial-heap.svg?style=flat)](https://david-dm.org/heap-data-structure/binomial-heap#info=dependencies)
 [![devDependencies Status](https://img.shields.io/david/dev/heap-data-structure/binomial-heap.svg?style=flat)](https://david-dm.org/heap-data-structure/binomial-heap#info=devDependencies)
