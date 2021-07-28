@@ -61,7 +61,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/heap-data-structure/binomial-heap.git",
+    "url": "https://github.com/heap-data-structure/binomial-heap",
     "type": "git"
   },
   "scripts": {
