@@ -61,8 +61,8 @@
       "@babel/polyfill",
       "@babel/register"
     ],
-    "concurrency": 8,
-    "timeout": "1m"
+    "timeout": "1m",
+    "concurrency": 8
   },
   "babel": {
     "presets": [
