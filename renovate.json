@@ -1,8 +1,5 @@
 {
   "extends": [
     "github>make-github-pseudonymous-again/renovate-config-js-library"
-  ],
-  "major": {
-    "automerge": false
-  }
+  ]
 }
