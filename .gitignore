@@ -9,7 +9,7 @@ node_modules
 jspm_packages
 
 # Coverage directory used by nyc
-coverage
+/coverage
 .nyc_output
 
 # Documentation
