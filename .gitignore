@@ -10,7 +10,7 @@ jspm_packages
 
 # Coverage directory used by nyc
 /coverage
-.nyc_output
+/.nyc_output
 
 # Documentation
 /gh-pages
