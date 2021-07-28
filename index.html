@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-binomial-heap API Document</title>
+  <title data-ice="title">Home | @heap-data-structure/binomial-heap</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Binomial heap data structures for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@heap-data-structure/binomial-heap"><meta property="twitter:description" content="Binomial heap data structures for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-binomial-heap.git" class="repo-url-github">Repository</a>
+  <a href="test.html" data-ice="testLink">Test</a>
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/heap-data-structure/binomial-heap"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -44,11 +39,15 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-binomial-heap-http-aureooms-github-io-js-binomial-heap-"><a href="http://aureooms.github.io/js-binomial-heap">@aureooms/js-binomial-heap</a></h1>
-<p><img src="https://cdn.rawgit.com/aureooms/js-binomial-heap/master/media/sketch.svg" width="864"></p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><p>:cherries:</p>
+<h1 id="-a-href--https---heap-data-structure-github-io-binomial-heap---heap-data-structure-binomial-heap--a-"><a href="https://heap-data-structure.github.io/binomial-heap">@heap-data-structure/binomial-heap</a></h1><p></p><p>
+<img src="https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/media/sketch.svg" width="600">
+</p>
+
+<p></p>
 <p>Binomial heap data structures for JavaScript.
-See <a href="https://aureooms.github.io/js-binomial-heap/index.html">docs</a>.
-Parent is <a href="https://github.com/aureooms/js-heap">@aureooms/js-heap</a>.</p>
+See <a href="https://heap-data-structure.github.io/binomial-heap/index.html">docs</a>.
+Parent is <a href="https://github.com/heap-data-structure/about">@heap-data-structure</a>.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">//
 //    o       o           o--.             o
 //    |\      |\          |\  \           /|\
@@ -58,32 +57,44 @@ Parent is <a href="https://github.com/aureooms/js-heap">@aureooms/js-heap</a>.</
 //                               |             |
 //                               o             o
 //
+
+import {
+  BinomialHeap,
+  LazyBinomialHeap,
+  BinomialTree,
+  BinomialTreeWithParent,
+} from &apos;@heap-data-structure/binomial-heap&apos;;
+
+import {increasing} from &apos;@total-order/primitive&apos;;
+
 let heaps = [
-  new ( BinomialHeap( BinomialTreeWithParent ) )( compare.increasing ) ,
-  new ( BinomialHeap( BinomialTree ) )( compare.increasing ) ,
-  new ( LazyBinomialHeap( BinomialTree ) )( compare.increasing ) ,
-  new ( LazyBinomialHeap( BinomialTreeWithParent ) )( compare.increasing ) ,
+  new ( BinomialHeap( BinomialTreeWithParent ) )( increasing ) ,
+  new ( BinomialHeap( BinomialTree ) )( increasing ) ,
+  new ( LazyBinomialHeap( BinomialTree ) )( increasing ) ,
+  new ( LazyBinomialHeap( BinomialTreeWithParent ) )( increasing ) ,
 ] ;</code>
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-binomial-heap/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-binomial-heap.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/v/aureooms-js-binomial-heap.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-binomial-heap"><img src="http://img.shields.io/travis/aureooms/js-binomial-heap.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-binomial-heap"><img src="http://img.shields.io/coveralls/aureooms/js-binomial-heap.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-binomial-heap#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-binomial-heap.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-binomial-heap#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-binomial-heap.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-binomial-heap"><img src="http://img.shields.io/codeclimate/github/aureooms/js-binomial-heap.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-binomial-heap"><img src="http://img.shields.io/npm/dm/aureooms-js-binomial-heap.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-binomial-heap/issues"><img src="http://img.shields.io/github/issues/aureooms/js-binomial-heap.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-binomial-heap/source.html"><img src="https://aureooms.github.io/js-binomial-heap/badge.svg" alt="Documentation"></a></p>
-<h2 id="reference">Reference</h2>
-<ul>
+<p><a href="https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/LICENSE"><img src="https://img.shields.io/github/license/heap-data-structure/binomial-heap.svg" alt="License"></a>
+<a href="https://www.npmjs.org/package/@heap-data-structure/binomial-heap"><img src="https://img.shields.io/npm/v/@heap-data-structure/binomial-heap.svg" alt="Version"></a>
+<a href="https://github.com/heap-data-structure/binomial-heap/actions/workflows/ci:test.yml?query=branch:main"><img src="https://img.shields.io/github/workflow/status/heap-data-structure/binomial-heap/ci:test?event=push&amp;label=tests" alt="Tests"></a>
+<a href="https://david-dm.org/heap-data-structure/binomial-heap"><img src="https://img.shields.io/david/heap-data-structure/binomial-heap.svg" alt="Dependencies"></a>
+<a href="https://david-dm.org/heap-data-structure/binomial-heap?type=dev"><img src="https://img.shields.io/david/dev/heap-data-structure/binomial-heap.svg" alt="Dev dependencies"></a>
+<a href="https://github.com/heap-data-structure/binomial-heap/issues"><img src="https://img.shields.io/github/issues/heap-data-structure/binomial-heap.svg" alt="GitHub issues"></a>
+<a href="https://www.npmjs.org/package/@heap-data-structure/binomial-heap"><img src="https://img.shields.io/npm/dm/@heap-data-structure/binomial-heap.svg" alt="Downloads"></a></p>
+<p><a href="https://codeclimate.com/github/heap-data-structure/binomial-heap/issues"><img src="https://img.shields.io/codeclimate/issues/heap-data-structure/binomial-heap.svg" alt="Code issues"></a>
+<a href="https://codeclimate.com/github/heap-data-structure/binomial-heap/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/heap-data-structure/binomial-heap.svg" alt="Code maintainability"></a>
+<a href="https://codecov.io/gh/heap-data-structure/binomial-heap"><img src="https://img.shields.io/codecov/c/gh/heap-data-structure/binomial-heap/main.svg" alt="Code coverage (cov)"></a>
+<a href="https://codeclimate.com/github/heap-data-structure/binomial-heap/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/heap-data-structure/binomial-heap.svg" alt="Code technical debt"></a>
+<a href="https://heap-data-structure.github.io/binomial-heap/source.html"><img src="https://heap-data-structure.github.io/binomial-heap/badge.svg" alt="Documentation"></a>
+<a href="https://bundlephobia.com/result?p=@heap-data-structure/binomial-heap"><img src="https://img.shields.io/bundlephobia/minzip/@heap-data-structure/binomial-heap" alt="Package size"></a></p>
+<h2 id="-scroll--reference">:scroll: Reference</h2><ul>
 <li><a href="http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf">http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf</a></li>
 </ul>
 </div>
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

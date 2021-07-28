@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/BinomialTreeWithParent.js | @heap-data-structure/binomial-heap</title>
+  <title data-ice="title">src/spec.js | @heap-data-structure/binomial-heap</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -39,49 +39,56 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/BinomialTreeWithParent.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export default function BinomialTreeWithParent(value, children) {
-	this.value = value;
-	this.children = children;
-	this.parent = null;
-}
+<div class="content" data-ice="content"><h1 data-ice="title">src/spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// eslint-disable-next-line ava/use-test
+import ava from &apos;ava&apos;;
 
-BinomialTreeWithParent.prototype.rank = function () {
-	return this.children.length;
-};
+import * as spec from &apos;@heap-data-structure/specification&apos;;
 
-/**
- * /!\ Can only be used to merge two trees of the same rank.
- * /!\ Modifies both trees
- */
+import {
+	BinomialHeap,
+	BinomialTreeWithParent,
+	BinomialTree,
+	LazyBinomialHeap,
+} from &apos;../../src/index.js&apos;;
 
-BinomialTreeWithParent.prototype.merge = function (predicate, other) {
-	if (predicate(this.value, other.value) &lt;= 0) {
-		this.children = this.children.concat(other);
-		other.parent = this;
-		return this;
-	}
+const heapswithreferences = [
+	[
+		&apos;BinomialHeap, BinomialTreeWithParent&apos;,
+		function (compare) {
+			return new (BinomialHeap(BinomialTreeWithParent))(compare);
+		},
+	],
+];
 
-	other.children = other.children.concat(this);
-	this.parent = other;
-	return other;
-};
+const heapswithoutreferences = [
+	[
+		&apos;BinomialHeap, BinomialTree&apos;,
+		function (compare) {
+			return new (BinomialHeap(BinomialTree))(compare);
+		},
+	],
+];
 
-/**
- * Method used to reset a tree element in order to reuse it
- * somewhere else, e.g. insert it back in the same or a new
- * heap.
- */
+const lazyheaps = [
+	[
+		&apos;LazyBinomialHeap, BinomialTree&apos;,
+		function (compare) {
+			return new (LazyBinomialHeap(BinomialTree))(compare);
+		},
+	],
+	[
+		&apos;LazyBinomialHeap, BinomialTreeWithParent&apos;,
+		function (compare) {
+			return new (LazyBinomialHeap(BinomialTreeWithParent))(compare);
+		},
+	],
+];
 
-BinomialTreeWithParent.prototype.detach = function () {
-	this.children.splice(0);
-	this.parent = null;
-	return this;
-};
-
-BinomialTreeWithParent.prototype.setparent = function (parent) {
-	this.parent = parent;
-};
+spec.test(ava, heapswithreferences, {references: true, length: true});
+spec.test(ava, heapswithoutreferences, {references: false, length: true});
+spec.pushpop(ava, true, lazyheaps);
+spec.merge(ava, true, lazyheaps);
 </code></pre>
 
 </div>

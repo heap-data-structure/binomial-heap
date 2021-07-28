@@ -1,7 +1,7 @@
 {
-  "coverage": "16.66%",
-  "expectCount": 6,
-  "actualCount": 1,
+  "coverage": "35.29%",
+  "expectCount": 17,
+  "actualCount": 6,
   "files": {
     "src/BinomialHeap.js": {
       "expectCount": 1,
@@ -11,17 +11,20 @@
       ]
     },
     "src/BinomialTree.js": {
-      "expectCount": 1,
-      "actualCount": 0,
+      "expectCount": 4,
+      "actualCount": 2,
       "undocumentLines": [
-        3
+        1,
+        32
       ]
     },
     "src/BinomialTreeWithParent.js": {
-      "expectCount": 1,
-      "actualCount": 0,
+      "expectCount": 5,
+      "actualCount": 2,
       "undocumentLines": [
-        3
+        1,
+        7,
+        40
       ]
     },
     "src/LazyBinomialHeap.js": {
@@ -35,13 +38,17 @@
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        2
+        1
       ]
     },
     "src/LazyStack.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        13,
+        17,
+        37
+      ]
     }
   }
 }

@@ -1,0 +1,1181 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/BinomialHeap.js",
+    "content": "export default function BinomialHeap(BinomialTree) {\n\tconst binomial_heap_push = function (compare, list, tree, rank) {\n\t\t// Ensures list has at least rank cells\n\n\t\tlet i = rank - list.length;\n\n\t\twhile (i-- > 0) {\n\t\t\tlist.push(null);\n\t\t}\n\n\t\t// Loop invariant\n\t\t// tree and list[i] have the same rank\n\n\t\tconst len = list.length;\n\n\t\tfor (i = rank; i < len && list[i] !== null; ++i) {\n\t\t\t// There is already a tree with this rank\n\n\t\t\ttree = tree.merge(compare, list[i]);\n\t\t\tlist[i] = null;\n\t\t}\n\n\t\t// Do not forget to append null if\n\t\t// we are lacking space\n\n\t\tif (i === len) {\n\t\t\tlist.push(null);\n\t\t}\n\n\t\t// Cell is empty\n\t\t// we can just put the new tree here\n\n\t\tlist[i] = tree;\n\t};\n\n\tconst merge = function (compare, list, other) {\n\t\tif (other.length === 0) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Merging two binomial heaps is like\n\t\t// adding two little endian integers\n\t\t// so, we first make sure that we have\n\t\t// enough place to store the result\n\n\t\tlet i = other.length - list.length;\n\n\t\twhile (i-- > 0) {\n\t\t\tlist.push(null);\n\t\t}\n\n\t\tlet carry = null;\n\n\t\tconst len = list.length;\n\n\t\t// Remember len >= other.length\n\n\t\tfor (i = 0; i < len; ++i) {\n\t\t\t// Other[i] can be either null or not\n\t\t\t// list[i] can be either null or not\n\t\t\t// carry can be either null or not\n\t\t\t// --> 2^3 = 8 possibilities\n\t\t\t//\n\t\t\t//    null ? | other[i] | list[i] | carry\n\t\t\t// ---------------------------------------\n\t\t\t//     (0)   |    no    |     no  |   no\n\t\t\t//     (1)   |    no    |     no  |  yes\n\t\t\t//     (2)   |    no    |    yes  |   no\n\t\t\t//     (3)   |    no    |    yes  |  yes\n\t\t\t//     (4)   |   yes    |     no  |   no\n\t\t\t//     (5)   |   yes    |     no  |  yes\n\t\t\t//     (6)   |   yes    |    yes  |   no\n\t\t\t//     (7)   |   yes    |    yes  |  yes\n\n\t\t\tif (i >= other.length || other[i] === null) {\n\t\t\t\tif (carry !== null) {\n\t\t\t\t\t// (6) other[i] = null and list[i] = null and carry != null\n\t\t\t\t\t// --> put carry in current cell\n\n\t\t\t\t\tif (list[i] === null) {\n\t\t\t\t\t\tlist[i] = carry;\n\t\t\t\t\t\tcarry = null;\n\t\t\t\t\t}\n\n\t\t\t\t\t// (4) other[i] = null and list[i] != null and carry != null\n\t\t\t\t\t// --> merge carry with current cell\n\t\t\t\t\telse {\n\t\t\t\t\t\tcarry = carry.merge(compare, list[i]);\n\t\t\t\t\t\tlist[i] = null;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// We do not need to do anything for\n\t\t\t\t// those 2 cases (carry and other[i] are null).\n\t\t\t\t// ==\n\t\t\t\t// (5) other[i] = null and list[i] != null and carry = null\n\t\t\t\t// (7) other[i] = null and list[i] = null and carry = null\n\t\t\t}\n\n\t\t\t// (0) other[i] != null and list[i] != null and carry != null\n\t\t\t// (2) other[i] != null and list[i] = null and carry != null\n\t\t\t// --> merge carry with other[i]\n\t\t\telse if (carry !== null) {\n\t\t\t\tcarry = carry.merge(compare, other[i]);\n\t\t\t}\n\n\t\t\t// (1) other[i] != null and list[i] != null and carry = null\n\t\t\t// --> merge current cell with other[i]\n\t\t\telse if (list[i] !== null) {\n\t\t\t\tcarry = list[i].merge(compare, other[i]);\n\t\t\t\tlist[i] = null;\n\t\t\t}\n\n\t\t\t// (3) other[i] != null and list[i] = null and carry = null\n\t\t\t// --> put other[i] in list\n\t\t\telse {\n\t\t\t\tlist[i] = other[i];\n\t\t\t}\n\t\t}\n\n\t\t// Do not forget to append last carry\n\n\t\tif (carry !== null) {\n\t\t\tlist.push(carry);\n\t\t}\n\t};\n\n\tconst find_min_index = function (compare, list, j, len) {\n\t\t// There MUST be at least one\n\t\t// non null element in this list\n\t\t// we look for the first one\n\n\t\tfor (; j < len - 1 && list[j] === null; ++j);\n\n\t\t// Here j is necessarily < len\n\t\t// and list[j] is non null\n\n\t\tlet i = j;\n\t\tlet opt = list[j].value;\n\n\t\t// We lookup remaining elements to see if there\n\t\t// is not a better candidate\n\n\t\tfor (++j; j < len; ++j) {\n\t\t\tconst item = list[j];\n\n\t\t\tif (item !== null) {\n\t\t\t\tconst candidate = item.value;\n\n\t\t\t\tif (compare(candidate, opt) < 0) {\n\t\t\t\t\ti = j;\n\t\t\t\t\topt = candidate;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn i;\n\t};\n\n\tconst remove_head_at_index = function (compare, list, i, len) {\n\t\tconst orphans = list[i].children;\n\t\tlist[i] = null;\n\n\t\tchange_parent(null, orphans);\n\n\t\t// We just removed the ith element\n\t\t// if list[i] is the last cell\n\t\t// of list we can drop it\n\n\t\tif (i === len - 1) {\n\t\t\tlist.pop();\n\t\t}\n\n\t\t// We merge back the children of\n\t\t// the removed tree into the heap\n\n\t\tmerge(compare, list, orphans);\n\t};\n\n\tconst binomial_heap_pop = function (compare, list) {\n\t\tconst len = list.length;\n\n\t\tconst i = find_min_index(compare, list, 0, len);\n\n\t\tconst tree = list[i];\n\n\t\tremove_head_at_index(compare, list, i, len);\n\n\t\treturn tree;\n\t};\n\n\tconst change_parent = function (parent, children) {\n\t\tconst len = children.length;\n\n\t\tfor (let i = 0; i < len; ++i) {\n\t\t\tchildren[i].setparent(parent);\n\t\t}\n\t};\n\n\tconst shift_up = function (tree, parent) {\n\t\t// Console.log( \"tree\", tree.value );\n\t\t// console.log( \"parent\", parent.value );\n\n\t\t// Here, we cannot just swap values as it would invalidate\n\t\t// externally stored references.\n\t\t// Instead, we swap children lists and update references\n\t\t// between the tree and its parent.\n\t\t// Then we update and return the new tree's parent.\n\n\t\t// console.log( \"tree.children\", tree.children );\n\t\t// console.log( \"parent.children\", parent.children );\n\n\t\tconst tmp = parent.children;\n\t\tparent.children = tree.children;\n\t\ttree.children = tmp;\n\n\t\tconst i = parent.rank();\n\n\t\t// Console.log( tree.children, i );\n\n\t\ttree.children[i] = parent;\n\n\t\ttree.parent = parent.parent;\n\n\t\tchange_parent(tree, tree.children);\n\t\tchange_parent(parent, parent.children);\n\n\t\t// Console.log( \"tree.children\", tree.children );\n\t\t// console.log( \"parent.children\", parent.children );\n\n\t\treturn tree.parent;\n\t};\n\n\tconst percolate_up = function (list, tree) {\n\t\tlet parent = tree.parent;\n\n\t\tif (parent !== null) {\n\t\t\twhile (true) {\n\t\t\t\tparent = shift_up(tree, parent);\n\n\t\t\t\tif (parent === null) {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\n\t\t\t\t// TODO this call might not be necessary\n\t\t\t\tparent.children[tree.rank()] = tree;\n\t\t\t}\n\n\t\t\tlist[tree.rank()] = tree;\n\t\t}\n\t};\n\n\tconst decreasekey = function (compare, list, tree, value) {\n\t\ttree.value = value;\n\t\tlet parent = tree.parent;\n\n\t\tif (parent !== null) {\n\t\t\twhile (true) {\n\t\t\t\tconst d = compare(value, parent.value);\n\n\t\t\t\tif (d >= 0) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tparent = shift_up(tree, parent);\n\n\t\t\t\tif (parent === null) {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\n\t\t\t\t// TODO this call should be in if ( d >= 0 )\n\t\t\t\tparent.children[tree.rank()] = tree;\n\t\t\t}\n\n\t\t\tlist[tree.rank()] = tree;\n\t\t}\n\t};\n\n\tconst deletetree = function (compare, list, tree) {\n\t\tpercolate_up(list, tree);\n\n\t\tremove_head_at_index(compare, list, tree.rank(), list.length);\n\n\t\ttree.detach();\n\t};\n\n\tconst Heap = function (compare) {\n\t\t// The compare function to use to compare values\n\n\t\tthis.compare = compare;\n\n\t\t// Number of elements in this heap\n\n\t\tthis.length = 0;\n\n\t\t// List of binomial trees\n\n\t\tthis.list = [];\n\t};\n\n\tHeap.prototype.head = function () {\n\t\tif (this.length === 0) {\n\t\t\treturn undefined;\n\t\t}\n\n\t\tconst i = find_min_index(this.compare, this.list, 0, this.list.length);\n\n\t\tconst tree = this.list[i];\n\n\t\treturn tree.value;\n\t};\n\n\tHeap.prototype.headreference = function () {\n\t\tif (this.length === 0) {\n\t\t\treturn null;\n\t\t}\n\n\t\tconst i = find_min_index(this.compare, this.list, 0, this.list.length);\n\n\t\tconst tree = this.list[i];\n\n\t\treturn tree;\n\t};\n\n\tHeap.prototype.pop = function () {\n\t\tif (this.length === 0) {\n\t\t\treturn undefined;\n\t\t}\n\n\t\t--this.length;\n\n\t\treturn binomial_heap_pop(this.compare, this.list).value;\n\t};\n\n\tHeap.prototype.popreference = function () {\n\t\tif (this.length === 0) {\n\t\t\treturn null;\n\t\t}\n\n\t\t--this.length;\n\n\t\treturn binomial_heap_pop(this.compare, this.list).detach();\n\t};\n\n\tHeap.prototype.push = function (value) {\n\t\t// Push a new tree of rank 0\n\n\t\tconst tree = new BinomialTree(value, []);\n\n\t\tthis.pushreference(tree);\n\n\t\treturn tree;\n\t};\n\n\tHeap.prototype.pushreference = function (tree) {\n\t\t++this.length;\n\n\t\t// Push an existing tree of rank 0\n\n\t\tbinomial_heap_push(this.compare, this.list, tree, 0);\n\t};\n\n\tHeap.prototype.merge = function (other) {\n\t\tmerge(this.compare, this.list, other.list);\n\n\t\tthis.length += other.length;\n\n\t\treturn this;\n\t};\n\n\tHeap.prototype.update = function (tree, value) {\n\t\tconst d = this.compare(value, tree.value);\n\n\t\tif (d < 0) {\n\t\t\tthis.decreasekey(tree, value);\n\t\t} else if (d > 0) {\n\t\t\tthis.increasekey(tree, value);\n\t\t} else {\n\t\t\t// D === 0 does not imply tree.value === value\n\n\t\t\ttree.value = value;\n\t\t}\n\t};\n\n\tHeap.prototype.decreasekey = function (tree, value) {\n\t\tdecreasekey(this.compare, this.list, tree, value);\n\t};\n\n\tHeap.prototype.increasekey = function (tree, value) {\n\t\tdeletetree(this.compare, this.list, tree);\n\n\t\ttree.value = value;\n\n\t\tbinomial_heap_push(this.compare, this.list, tree, 0);\n\t};\n\n\tHeap.prototype.delete = function (tree) {\n\t\t--this.length;\n\n\t\tdeletetree(this.compare, this.list, tree);\n\t};\n\n\treturn Heap;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/BinomialHeap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "BinomialHeap",
+    "memberof": "src/BinomialHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialHeap.js~BinomialHeap",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialHeap.js",
+    "importStyle": "BinomialHeap",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "BinomialTree",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/BinomialTree.js",
+    "content": "export default function BinomialTree(value, children) {\n\tthis.value = value;\n\tthis.children = children;\n}\n\n/**\n * /!\\ Can only be used to merge two trees of the same rank.\n * /!\\ Modifies both trees\n */\n\nBinomialTree.prototype.merge = function (predicate, other) {\n\tif (predicate(this.value, other.value) <= 0) {\n\t\tthis.children = this.children.concat(other);\n\t\treturn this;\n\t}\n\n\tother.children = other.children.concat(this);\n\treturn other;\n};\n\n/**\n * Method used to reset a tree element in order to reuse it\n * somewhere else, e.g. insert it back in the same or a new\n * heap.\n */\n\nBinomialTree.prototype.detach = function () {\n\tthis.children.splice(0);\n\treturn this;\n};\n\nBinomialTree.prototype.setparent = function (_parent) {\n\t// We do not keep track of any parent here\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/BinomialTree.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "BinomialTree",
+    "memberof": "src/BinomialTree.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTree.js~BinomialTree",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTree.js",
+    "importStyle": "BinomialTree",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "children",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "merge",
+    "memberof": "src/BinomialTree.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTree.js~merge",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTree.js",
+    "importStyle": null,
+    "description": "/!\\ Can only be used to merge two trees of the same rank.\n/!\\ Modifies both trees",
+    "lineNumber": 11,
+    "params": [
+      {
+        "name": "predicate",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "other",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "detach",
+    "memberof": "src/BinomialTree.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTree.js~detach",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTree.js",
+    "importStyle": null,
+    "description": "Method used to reset a tree element in order to reuse it\nsomewhere else, e.g. insert it back in the same or a new\nheap.",
+    "lineNumber": 27,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "setparent",
+    "memberof": "src/BinomialTree.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTree.js~setparent",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTree.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_parent",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/BinomialTreeWithParent.js",
+    "content": "export default function BinomialTreeWithParent(value, children) {\n\tthis.value = value;\n\tthis.children = children;\n\tthis.parent = null;\n}\n\nBinomialTreeWithParent.prototype.rank = function () {\n\treturn this.children.length;\n};\n\n/**\n * /!\\ Can only be used to merge two trees of the same rank.\n * /!\\ Modifies both trees\n */\n\nBinomialTreeWithParent.prototype.merge = function (predicate, other) {\n\tif (predicate(this.value, other.value) <= 0) {\n\t\tthis.children = this.children.concat(other);\n\t\tother.parent = this;\n\t\treturn this;\n\t}\n\n\tother.children = other.children.concat(this);\n\tthis.parent = other;\n\treturn other;\n};\n\n/**\n * Method used to reset a tree element in order to reuse it\n * somewhere else, e.g. insert it back in the same or a new\n * heap.\n */\n\nBinomialTreeWithParent.prototype.detach = function () {\n\tthis.children.splice(0);\n\tthis.parent = null;\n\treturn this;\n};\n\nBinomialTreeWithParent.prototype.setparent = function (parent) {\n\tthis.parent = parent;\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/BinomialTreeWithParent.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "BinomialTreeWithParent",
+    "memberof": "src/BinomialTreeWithParent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTreeWithParent.js~BinomialTreeWithParent",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTreeWithParent.js",
+    "importStyle": "BinomialTreeWithParent",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "children",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "rank",
+    "memberof": "src/BinomialTreeWithParent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTreeWithParent.js~rank",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTreeWithParent.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "merge",
+    "memberof": "src/BinomialTreeWithParent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTreeWithParent.js~merge",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTreeWithParent.js",
+    "importStyle": null,
+    "description": "/!\\ Can only be used to merge two trees of the same rank.\n/!\\ Modifies both trees",
+    "lineNumber": 16,
+    "params": [
+      {
+        "name": "predicate",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "other",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "detach",
+    "memberof": "src/BinomialTreeWithParent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTreeWithParent.js~detach",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTreeWithParent.js",
+    "importStyle": null,
+    "description": "Method used to reset a tree element in order to reuse it\nsomewhere else, e.g. insert it back in the same or a new\nheap.",
+    "lineNumber": 34,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "setparent",
+    "memberof": "src/BinomialTreeWithParent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/BinomialTreeWithParent.js~setparent",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/BinomialTreeWithParent.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "params": [
+      {
+        "name": "parent",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/LazyBinomialHeap.js",
+    "content": "import LazyStack from './LazyStack.js';\n\nexport default function LazyBinomialHeap(BinomialTree) {\n\tconst lazy_binomial_heap_push = function (lazy, tree, rank) {\n\t\t// Lightweight binomial heap containing a unique tree\n\t\tconst sequence = [];\n\n\t\t// Offset tree by its rank\n\t\tlet i = rank;\n\n\t\twhile (i--) {\n\t\t\tsequence.push(null);\n\t\t}\n\n\t\tsequence.push(tree);\n\n\t\t// Do not merge the generated sequence immediately\n\t\tlazy.push(sequence);\n\t};\n\n\tconst merge = function (compare, list, other) {\n\t\tif (other.length === 0) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Merging two binomial heaps is like\n\t\t// adding two little endian integers\n\t\t// so, we first make sure that we have\n\t\t// enough place to store the result\n\n\t\tlet i = other.length - list.length;\n\n\t\twhile (i-- > 0) {\n\t\t\tlist.push(null);\n\t\t}\n\n\t\tlet carry = null;\n\n\t\tconst len = list.length;\n\n\t\t// Remember len >= other.length\n\n\t\tfor (i = 0; i < len; ++i) {\n\t\t\t// Other[i] can be either null or not\n\t\t\t// list[i] can be either null or not\n\t\t\t// carry can be either null or not\n\t\t\t// --> 2^3 = 8 possibilities\n\t\t\t//\n\t\t\t//    null ? | other[i] | list[i] | carry\n\t\t\t// ---------------------------------------\n\t\t\t//     (0)   |    no    |     no  |   no\n\t\t\t//     (1)   |    no    |     no  |  yes\n\t\t\t//     (2)   |    no    |    yes  |   no\n\t\t\t//     (3)   |    no    |    yes  |  yes\n\t\t\t//     (4)   |   yes    |     no  |   no\n\t\t\t//     (5)   |   yes    |     no  |  yes\n\t\t\t//     (6)   |   yes    |    yes  |   no\n\t\t\t//     (7)   |   yes    |    yes  |  yes\n\n\t\t\tif (i >= other.length || other[i] === null) {\n\t\t\t\tif (carry !== null) {\n\t\t\t\t\t// (6) other[i] = null and list[i] = null and carry != null\n\t\t\t\t\t// --> put carry in current cell\n\n\t\t\t\t\tif (list[i] === null) {\n\t\t\t\t\t\tlist[i] = carry;\n\t\t\t\t\t\tcarry = null;\n\t\t\t\t\t}\n\n\t\t\t\t\t// (4) other[i] = null and list[i] != null and carry != null\n\t\t\t\t\t// --> merge carry with current cell\n\t\t\t\t\telse {\n\t\t\t\t\t\tcarry = carry.merge(compare, list[i]);\n\t\t\t\t\t\tlist[i] = null;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// We do not need to do anything for\n\t\t\t\t// those 2 cases (carry and other[i] are null).\n\t\t\t\t// ==\n\t\t\t\t// (5) other[i] = null and list[i] != null and carry = null\n\t\t\t\t// (7) other[i] = null and list[i] = null and carry = null\n\t\t\t}\n\n\t\t\t// (0) other[i] != null and list[i] != null and carry != null\n\t\t\t// (2) other[i] != null and list[i] = null and carry != null\n\t\t\t// --> merge carry with other[i]\n\t\t\telse if (carry !== null) {\n\t\t\t\tcarry = carry.merge(compare, other[i]);\n\t\t\t}\n\n\t\t\t// (1) other[i] != null and list[i] != null and carry = null\n\t\t\t// --> merge current cell with other[i]\n\t\t\telse if (list[i] !== null) {\n\t\t\t\tcarry = list[i].merge(compare, other[i]);\n\t\t\t\tlist[i] = null;\n\t\t\t}\n\n\t\t\t// (3) other[i] != null and list[i] = null and carry = null\n\t\t\t// --> put other[i] in list\n\t\t\telse {\n\t\t\t\tlist[i] = other[i];\n\t\t\t}\n\t\t}\n\n\t\t// Do not forget to append last carry\n\n\t\tif (carry !== null) {\n\t\t\tlist.push(carry);\n\t\t}\n\t};\n\n\tconst lazy_binomial_heap_pop = function (compare, list, lazy) {\n\t\t// Amortized merge of stored values\n\n\t\twhile (!lazy.empty()) merge(compare, list, lazy.pop());\n\n\t\t// Standard O(log n) optimum search method\n\n\t\tconst len = list.length;\n\n\t\t// There MUST be at least one\n\t\t// non null element in this list\n\t\t// we look for the first one\n\n\t\tlet j = 0;\n\t\tfor (; j < len - 1 && list[j] === null; ++j);\n\n\t\t// Here j is necessarily < len\n\t\t// and list[j] is non null\n\n\t\tlet i = j;\n\t\tlet opt = list[j].value;\n\n\t\t// We lookup remaining elements to see if there\n\t\t// is not a better candidate\n\n\t\tfor (++j; j < len; ++j) {\n\t\t\tconst item = list[j];\n\n\t\t\tif (item !== null) {\n\t\t\t\tconst candidate = item.value;\n\n\t\t\t\tif (compare(candidate, opt) < 0) {\n\t\t\t\t\ti = j;\n\t\t\t\t\topt = candidate;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tconst orphan = list[i].children;\n\t\tlist[i] = null;\n\n\t\t// We just removed the ith element\n\t\t// if list[i] is the last cell\n\t\t// of list we can drop it\n\n\t\tif (i === len - 1) {\n\t\t\tlist.pop();\n\t\t}\n\n\t\t// We store the children in the\n\t\t// lazy list\n\n\t\tlazy.push(orphan);\n\n\t\treturn opt;\n\t};\n\n\tconst Heap = function (compare) {\n\t\t// The compare function to use to compare values\n\n\t\tthis.compare = compare;\n\n\t\t// Number of elements in this heap\n\n\t\tthis.length = 0;\n\n\t\t// List of binomial trees\n\n\t\tthis.list = [];\n\n\t\t// List of binomial heaps waiting to be merged\n\n\t\tthis.lazy = new LazyStack();\n\t};\n\n\tHeap.prototype.pop = function () {\n\t\tif (this.length === 0) {\n\t\t\treturn undefined;\n\t\t}\n\n\t\t--this.length;\n\n\t\treturn lazy_binomial_heap_pop(this.compare, this.list, this.lazy);\n\t};\n\n\tHeap.prototype.push = function (value) {\n\t\t++this.length;\n\n\t\t// Push a new tree of rank 0\n\n\t\treturn lazy_binomial_heap_push(this.lazy, new BinomialTree(value, []), 0);\n\t};\n\n\tHeap.prototype.merge = function (other) {\n\t\tthis.lazy.meld(other.lazy);\n\n\t\tthis.length += other.length;\n\n\t\treturn this;\n\t};\n\n\treturn Heap;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/LazyBinomialHeap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "LazyBinomialHeap",
+    "memberof": "src/LazyBinomialHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyBinomialHeap.js~LazyBinomialHeap",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyBinomialHeap.js",
+    "importStyle": "LazyBinomialHeap",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "BinomialTree",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/LazyNode.js",
+    "content": "export default function LazyNode(value, next) {\n\tthis.value = value;\n\tthis.next = next;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/LazyNode.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "LazyNode",
+    "memberof": "src/LazyNode.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyNode.js~LazyNode",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyNode.js",
+    "importStyle": "LazyNode",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/LazyStack.js",
+    "content": "import LazyNode from './LazyNode.js';\n\n/**\n * LazyStack#peek only valid if LazyStack#empty is false.\n * LazyStack#shift only valid if LazyStack#empty is false.\n */\n\nexport default function LazyStack() {\n\tthis.top = null;\n\tthis.bottom = null;\n}\n\nLazyStack.prototype.empty = function () {\n\treturn this.top === null;\n};\n\nLazyStack.prototype.push = function (value) {\n\tthis.top = new LazyNode(value, this.top);\n\n\tif (this.bottom === null) this.bottom = this.top;\n};\n\n/**\n * Only valid if LazyStack#empty is false.\n */\n\nLazyStack.prototype.pop = function () {\n\tconst value = this.top.value;\n\n\tthis.top = this.top.next;\n\n\tif (this.top === null) this.bottom = null;\n\n\treturn value;\n};\n\nLazyStack.prototype.meld = function (other) {\n\tif (this.bottom === null) this.top = other.top;\n\telse this.bottom.next = other.top;\n\n\tthis.bottom = other.bottom;\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/LazyStack.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "LazyStack",
+    "memberof": "src/LazyStack.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyStack.js~LazyStack",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyStack.js",
+    "importStyle": "LazyStack",
+    "description": "LazyStack#peek only valid if LazyStack#empty is false.\nLazyStack#shift only valid if LazyStack#empty is false.",
+    "lineNumber": 8,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "empty",
+    "memberof": "src/LazyStack.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyStack.js~empty",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyStack.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "push",
+    "memberof": "src/LazyStack.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyStack.js~push",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyStack.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "pop",
+    "memberof": "src/LazyStack.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyStack.js~pop",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyStack.js",
+    "importStyle": null,
+    "description": "Only valid if LazyStack#empty is false.",
+    "lineNumber": 27,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "meld",
+    "memberof": "src/LazyStack.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/LazyStack.js~meld",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/binomial-heap/src/LazyStack.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "other",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export {default as BinomialHeap} from './BinomialHeap.js';\nexport {default as BinomialTree} from './BinomialTree.js';\nexport {default as BinomialTreeWithParent} from './BinomialTreeWithParent.js';\nexport {default as LazyBinomialHeap} from './LazyBinomialHeap.js';\nexport {default as LazyNode} from './LazyNode.js';\nexport {default as LazyStack} from './LazyStack.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": ":cherries:\n[@heap-data-structure/binomial-heap](https://heap-data-structure.github.io/binomial-heap)\n==\n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/media/sketch.svg\" width=\"600\">\n</p>\n\nBinomial heap data structures for JavaScript.\nSee [docs](https://heap-data-structure.github.io/binomial-heap/index.html).\nParent is [@heap-data-structure](https://github.com/heap-data-structure/about).\n\n```js\n//\n//    o       o           o--.             o\n//    |\\      |\\          |\\  \\           /|\\\n//    o o  +  o o    =    o o  o    =    o o o\n//      |       |           |  |\\          | |\\\n//      o       o           o  o o         o o o\n//                               |             |\n//                               o             o\n//\n\nimport {\n  BinomialHeap,\n  LazyBinomialHeap,\n  BinomialTree,\n  BinomialTreeWithParent,\n} from '@heap-data-structure/binomial-heap';\n\nimport {increasing} from '@total-order/primitive';\n\nlet heaps = [\n  new ( BinomialHeap( BinomialTreeWithParent ) )( increasing ) ,\n  new ( BinomialHeap( BinomialTree ) )( increasing ) ,\n  new ( LazyBinomialHeap( BinomialTree ) )( increasing ) ,\n  new ( LazyBinomialHeap( BinomialTreeWithParent ) )( increasing ) ,\n] ;\n```\n\n[![License](https://img.shields.io/github/license/heap-data-structure/binomial-heap.svg)](https://raw.githubusercontent.com/heap-data-structure/binomial-heap/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@heap-data-structure/binomial-heap.svg)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)\n[![Tests](https://img.shields.io/github/workflow/status/heap-data-structure/binomial-heap/ci:test?event=push&label=tests)](https://github.com/heap-data-structure/binomial-heap/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/heap-data-structure/binomial-heap.svg)](https://david-dm.org/heap-data-structure/binomial-heap)\n[![Dev dependencies](https://img.shields.io/david/dev/heap-data-structure/binomial-heap.svg)](https://david-dm.org/heap-data-structure/binomial-heap?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/heap-data-structure/binomial-heap.svg)](https://github.com/heap-data-structure/binomial-heap/issues)\n[![Downloads](https://img.shields.io/npm/dm/@heap-data-structure/binomial-heap.svg)](https://www.npmjs.org/package/@heap-data-structure/binomial-heap)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/heap-data-structure/binomial-heap.svg)](https://codeclimate.com/github/heap-data-structure/binomial-heap/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/heap-data-structure/binomial-heap.svg)](https://codeclimate.com/github/heap-data-structure/binomial-heap/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/heap-data-structure/binomial-heap/main.svg)](https://codecov.io/gh/heap-data-structure/binomial-heap)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/heap-data-structure/binomial-heap.svg)](https://codeclimate.com/github/heap-data-structure/binomial-heap/trends/technical_debt)\n[![Documentation](https://heap-data-structure.github.io/binomial-heap/badge.svg)](https://heap-data-structure.github.io/binomial-heap/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@heap-data-structure/binomial-heap)](https://bundlephobia.com/result?p=@heap-data-structure/binomial-heap)\n\n## :scroll: Reference\n\n  - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf\n",
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@heap-data-structure/binomial-heap\",\n  \"description\": \"Binomial heap data structures for JavaScript\",\n  \"version\": \"12.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://heap-data-structure.github.io/binomial-heap\",\n  \"repository\": {\n    \"url\": \"https://github.com/heap-data-structure/binomial-heap\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/heap-data-structure/binomial-heap/issues\"\n  },\n  \"keywords\": [\n    \"binomial\",\n    \"data\",\n    \"heap\",\n    \"javascript\",\n    \"js\",\n    \"structure\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.13.10\",\n    \"@babel/preset-env\": \"7.13.10\",\n    \"@babel/register\": \"7.13.8\",\n    \"@commitlint/cli\": \"13.1.0\",\n    \"@heap-data-structure/specification\": \"16.0.0\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.1.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.3\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"1.0.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"7.0.1\",\n    \"lint-staged\": \"11.1.1\",\n    \"microbundle\": \"0.13.1\",\n    \"np\": \"6.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.9\",\n    \"xo\": \"0.42.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\",\n      \"new-cap\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@heap-data-structure/binomial-heap\n```\n\n### npm\n```terminal\nnpm install @heap-data-structure/binomial-heap --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nawait import( 'regenerator-runtime/runtime.js' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst binomialheap = await import( '@heap-data-structure/binomial-heap' ) ;\n// or\nimport binomialheap from '@heap-data-structure/binomial-heap' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Examples\n\n```js\n// can choose between 3 different implementations\n//\n//   - BinomialHeap( BinomialTreeWithParent )\n//      # head -> value\n//      # headreference -> reference\n//      # pop -> value\n//      # popreference -> reference\n//      # push( value ) -> reference\n//      # pushreference( reference )\n//      # merge( other )\n//      # update( reference , value )\n//      # decreasekey( reference , value )\n//      # increasekey( reference , value )\n//      # delete( reference )\n//\n//   - BinomialHeap( BinomialTree )\n//      # head -> value\n//      # pop -> value\n//      # push( value )\n//      # merge( other )\n//\n//   - LazyBinomialHeap( BinomialTree )\n//      # pop -> value\n//      # push( value )\n//      # merge( other )\n\nimport {\n  BinomialHeap,\n  LazyBinomialHeap,\n  BinomialTree,\n  BinomialTreeWithParent,\n} from '@heap-data-structure/binomial-heap';\n\nimport {increasing} from '@total-order/primitive';\n\nlet Heap = LazyBinomialHeap(BinomialTree);\n\nlet a = new Heap(increasing) ;\nlet b = new Heap(increasing) ;\n\na.push(5);\na.push(1);\na.push(4);\nb.push(3);\nb.push(2);\n\na.length; // 3\nb.length; // 2\n\na.merge(b);\ndelete b;\n\na.length; // 5\n\na.pop(); // 1\na.pop(); // 2\na.pop(); // 3\na.pop(); // 4\na.pop(); // 5\n\na.length; // 0\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 72,
+    "kind": "testFile",
+    "name": "src/spec.js",
+    "content": "// eslint-disable-next-line ava/use-test\nimport ava from 'ava';\n\nimport * as spec from '@heap-data-structure/specification';\n\nimport {\n\tBinomialHeap,\n\tBinomialTreeWithParent,\n\tBinomialTree,\n\tLazyBinomialHeap,\n} from '../../src/index.js';\n\nconst heapswithreferences = [\n\t[\n\t\t'BinomialHeap, BinomialTreeWithParent',\n\t\tfunction (compare) {\n\t\t\treturn new (BinomialHeap(BinomialTreeWithParent))(compare);\n\t\t},\n\t],\n];\n\nconst heapswithoutreferences = [\n\t[\n\t\t'BinomialHeap, BinomialTree',\n\t\tfunction (compare) {\n\t\t\treturn new (BinomialHeap(BinomialTree))(compare);\n\t\t},\n\t],\n];\n\nconst lazyheaps = [\n\t[\n\t\t'LazyBinomialHeap, BinomialTree',\n\t\tfunction (compare) {\n\t\t\treturn new (LazyBinomialHeap(BinomialTree))(compare);\n\t\t},\n\t],\n\t[\n\t\t'LazyBinomialHeap, BinomialTreeWithParent',\n\t\tfunction (compare) {\n\t\t\treturn new (LazyBinomialHeap(BinomialTreeWithParent))(compare);\n\t\t},\n\t],\n];\n\nspec.test(ava, heapswithreferences, {references: true, length: true});\nspec.test(ava, heapswithoutreferences, {references: false, length: true});\nspec.pushpop(ava, true, lazyheaps);\nspec.merge(ava, true, lazyheaps);\n",
+    "static": true,
+    "longname": "/home/runner/work/binomial-heap/binomial-heap/test/src/spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  }
+]
