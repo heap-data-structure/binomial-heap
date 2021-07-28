@@ -17,7 +17,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "heap-data-structure/binomial-heap"
+          "title": "@heap-data-structure/binomial-heap"
         },
         "test": {
           "type": "ava",
