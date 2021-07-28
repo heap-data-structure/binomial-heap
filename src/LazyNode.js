@@ -1,7 +1,4 @@
-
-export default function LazyNode ( value , next ) {
-
-	this.value = value ;
-	this.next = next ;
-
+export default function LazyNode(value, next) {
+	this.value = value;
+	this.next = next;
 }

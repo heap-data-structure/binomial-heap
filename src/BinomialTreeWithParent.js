@@ -1,6 +1,4 @@
-
-
-export default function BinomialTreeWithParent ( value, children ) {
+export default function BinomialTreeWithParent(value, children) {
 	this.value = value;
 	this.children = children;
 	this.parent = null;
@@ -15,20 +13,16 @@ BinomialTreeWithParent.prototype.rank = function () {
  * /!\ Modifies both trees
  */
 
-BinomialTreeWithParent.prototype.merge = function ( predicate, other ) {
-
-	if ( predicate( this.value, other.value ) <= 0 ) {
-		this.children = this.children.concat( other );
+BinomialTreeWithParent.prototype.merge = function (predicate, other) {
+	if (predicate(this.value, other.value) <= 0) {
+		this.children = this.children.concat(other);
 		other.parent = this;
 		return this;
 	}
 
-	else {
-		other.children = other.children.concat( this );
-		this.parent = other;
-		return other;
-	}
-
+	other.children = other.children.concat(this);
+	this.parent = other;
+	return other;
 };
 
 /**
@@ -38,11 +32,11 @@ BinomialTreeWithParent.prototype.merge = function ( predicate, other ) {
  */
 
 BinomialTreeWithParent.prototype.detach = function () {
-	this.children.splice( 0 );
+	this.children.splice(0);
 	this.parent = null;
 	return this;
 };
 
-BinomialTreeWithParent.prototype.setparent = function ( parent ) {
+BinomialTreeWithParent.prototype.setparent = function (parent) {
 	this.parent = parent;
 };

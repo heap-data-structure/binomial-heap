@@ -1,50 +1,49 @@
-import ava from 'ava' ;
+// eslint-disable-next-line ava/use-test
+import ava from 'ava';
 
-import * as spec from '@heap-data-structure/specification' ;
+import * as spec from '@heap-data-structure/specification';
 
 import {
 	BinomialHeap,
 	BinomialTreeWithParent,
 	BinomialTree,
 	LazyBinomialHeap,
-} from '../../src/index.js' ;
+} from '../../src/index.js';
 
 const heapswithreferences = [
-
-
-	[ "BinomialHeap, BinomialTreeWithParent" , function ( compare ) {
-
-		return new ( BinomialHeap( BinomialTreeWithParent ) )( compare ) ;
-
-	} ] ,
-
-
-] ;
+	[
+		'BinomialHeap, BinomialTreeWithParent',
+		function (compare) {
+			return new (BinomialHeap(BinomialTreeWithParent))(compare);
+		},
+	],
+];
 
 const heapswithoutreferences = [
-
-	[ "BinomialHeap, BinomialTree" , function ( compare ) {
-
-		return new ( BinomialHeap( BinomialTree ) )( compare ) ;
-
-	} ] ,
-] ;
+	[
+		'BinomialHeap, BinomialTree',
+		function (compare) {
+			return new (BinomialHeap(BinomialTree))(compare);
+		},
+	],
+];
 
 const lazyheaps = [
+	[
+		'LazyBinomialHeap, BinomialTree',
+		function (compare) {
+			return new (LazyBinomialHeap(BinomialTree))(compare);
+		},
+	],
+	[
+		'LazyBinomialHeap, BinomialTreeWithParent',
+		function (compare) {
+			return new (LazyBinomialHeap(BinomialTreeWithParent))(compare);
+		},
+	],
+];
 
-	[ "LazyBinomialHeap, BinomialTree" , function ( compare ) {
-
-		return new ( LazyBinomialHeap( BinomialTree ) )( compare ) ;
-
-	} ] ,
-	[ "LazyBinomialHeap, BinomialTreeWithParent" , function ( compare ) {
-
-		return new ( LazyBinomialHeap( BinomialTreeWithParent ) )( compare ) ;
-
-	} ]
-] ;
-
-spec.test( ava , heapswithreferences , { references : true , length : true } ) ;
-spec.test( ava , heapswithoutreferences , { references : false , length : true } ) ;
-spec.pushpop( ava , true , lazyheaps ) ;
-spec.merge( ava , true , lazyheaps ) ;
+spec.test(ava, heapswithreferences, {references: true, length: true});
+spec.test(ava, heapswithoutreferences, {references: false, length: true});
+spec.pushpop(ava, true, lazyheaps);
+spec.merge(ava, true, lazyheaps);

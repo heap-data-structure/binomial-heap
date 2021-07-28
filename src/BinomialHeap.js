@@ -1,74 +1,62 @@
-export default function BinomialHeap ( BinomialTree ) {
+export default function BinomialHeap(BinomialTree) {
+	const binomial_heap_push = function (compare, list, tree, rank) {
+		// Ensures list has at least rank cells
 
-	var binomial_heap_push = function ( compare, list, tree, rank ) {
+		let i = rank - list.length;
 
-		var i, len;
-
-		// ensures list has at least rank cells
-
-		i = rank - list.length;
-
-		while ( i --> 0 ) {
-			list.push( null );
+		while (i-- > 0) {
+			list.push(null);
 		}
 
-		// loop invariant
+		// Loop invariant
 		// tree and list[i] have the same rank
 
-		len = list.length;
+		const len = list.length;
 
-		for ( i = rank ; i < len && list[i] !== null ; ++i ) {
+		for (i = rank; i < len && list[i] !== null; ++i) {
+			// There is already a tree with this rank
 
-			// there is already a tree with this rank
-
-			tree = tree.merge( compare, list[i] );
+			tree = tree.merge(compare, list[i]);
 			list[i] = null;
-
 		}
 
-		// do not forget to append null if
+		// Do not forget to append null if
 		// we are lacking space
 
-		if ( i === len ) {
-			list.push( null );
+		if (i === len) {
+			list.push(null);
 		}
 
-		// cell is empty
+		// Cell is empty
 		// we can just put the new tree here
 
 		list[i] = tree;
-
 	};
 
-
-	var merge = function ( compare, list, other ) {
-
-		var i, len, carry;
-
-		if ( other.length === 0 ) {
+	const merge = function (compare, list, other) {
+		if (other.length === 0) {
 			return;
 		}
 
-		// merging two binomial heaps is like
+		// Merging two binomial heaps is like
 		// adding two little endian integers
 		// so, we first make sure that we have
 		// enough place to store the result
 
-		i = other.length - list.length;
+		let i = other.length - list.length;
 
-		while ( i --> 0 ) {
-			list.push( null );
+		while (i-- > 0) {
+			list.push(null);
 		}
 
-		carry = null;
+		let carry = null;
 
-		len = list.length;
+		const len = list.length;
 
-		// remember len >= other.length
+		// Remember len >= other.length
 
-		for ( i = 0 ; i < len ; ++i ) {
-
-			// other[i] can be either null or not
+		for (i = 0; i < len; ++i) {
+			// Other[i] can be either null or not
 			// list[i] can be either null or not
 			// carry can be either null or not
 			// --> 2^3 = 8 possibilities
@@ -84,28 +72,22 @@ export default function BinomialHeap ( BinomialTree ) {
 			//     (6)   |   yes    |    yes  |   no
 			//     (7)   |   yes    |    yes  |  yes
 
-			if ( i >= other.length || other[i] === null ) {
-
-				if ( carry !== null ) {
-
-
+			if (i >= other.length || other[i] === null) {
+				if (carry !== null) {
 					// (6) other[i] = null and list[i] = null and carry != null
 					// --> put carry in current cell
 
-					if ( list[i] === null ) {
+					if (list[i] === null) {
 						list[i] = carry;
 						carry = null;
 					}
 
-
 					// (4) other[i] = null and list[i] != null and carry != null
 					// --> merge carry with current cell
-
 					else {
-						carry = carry.merge( compare, list[i] );
+						carry = carry.merge(compare, list[i]);
 						list[i] = null;
 					}
-
 				}
 
 				// We do not need to do anything for
@@ -113,145 +95,110 @@ export default function BinomialHeap ( BinomialTree ) {
 				// ==
 				// (5) other[i] = null and list[i] != null and carry = null
 				// (7) other[i] = null and list[i] = null and carry = null
-
 			}
 
 			// (0) other[i] != null and list[i] != null and carry != null
 			// (2) other[i] != null and list[i] = null and carry != null
 			// --> merge carry with other[i]
-
-			else if ( carry !== null ) {
-
-				carry = carry.merge( compare, other[i] );
-
+			else if (carry !== null) {
+				carry = carry.merge(compare, other[i]);
 			}
 
 			// (1) other[i] != null and list[i] != null and carry = null
 			// --> merge current cell with other[i]
-
-			else if ( list[i] !== null ) {
-
-				carry = list[i].merge( compare, other[i] );
+			else if (list[i] !== null) {
+				carry = list[i].merge(compare, other[i]);
 				list[i] = null;
-
 			}
-
 
 			// (3) other[i] != null and list[i] = null and carry = null
 			// --> put other[i] in list
-
 			else {
-
 				list[i] = other[i];
-
 			}
-
 		}
 
-		// do not forget to append last carry
+		// Do not forget to append last carry
 
-		if ( carry !== null ) {
-			list.push( carry );
+		if (carry !== null) {
+			list.push(carry);
 		}
-
 	};
 
-	var find_min_index = function ( compare, list, j, len ) {
-
-		var i, opt, item, candidate;
-
-		// there MUST be at least one
+	const find_min_index = function (compare, list, j, len) {
+		// There MUST be at least one
 		// non null element in this list
 		// we look for the first one
 
-		for ( ; j < len - 1 && list[j] === null ; ++j ) ;
+		for (; j < len - 1 && list[j] === null; ++j);
 
-		// here j is necessarily < len
+		// Here j is necessarily < len
 		// and list[j] is non null
 
-		i = j;
-		opt = list[j].value;
+		let i = j;
+		let opt = list[j].value;
 
-		// we lookup remaining elements to see if there
+		// We lookup remaining elements to see if there
 		// is not a better candidate
 
-		for ( ++j ; j < len ; ++j ) {
+		for (++j; j < len; ++j) {
+			const item = list[j];
 
-			item = list[j];
+			if (item !== null) {
+				const candidate = item.value;
 
-			if ( item !== null ) {
-
-				candidate = item.value;
-
-				if ( compare( candidate, opt ) < 0 ) {
-
+				if (compare(candidate, opt) < 0) {
 					i = j;
 					opt = candidate;
-
 				}
-
 			}
-
 		}
 
 		return i;
-
 	};
 
-	var remove_head_at_index = function ( compare, list, i, len ) {
-
-		var orphans;
-
-		orphans = list[i].children;
+	const remove_head_at_index = function (compare, list, i, len) {
+		const orphans = list[i].children;
 		list[i] = null;
 
-		change_parent( null, orphans );
+		change_parent(null, orphans);
 
-		// we just removed the ith element
+		// We just removed the ith element
 		// if list[i] is the last cell
 		// of list we can drop it
 
-		if ( i === len - 1 ) {
+		if (i === len - 1) {
 			list.pop();
 		}
 
-		// we merge back the children of
+		// We merge back the children of
 		// the removed tree into the heap
 
-		merge( compare, list, orphans );
-
+		merge(compare, list, orphans);
 	};
 
-	var binomial_heap_pop = function ( compare, list ) {
+	const binomial_heap_pop = function (compare, list) {
+		const len = list.length;
 
-		var i, len, tree;
+		const i = find_min_index(compare, list, 0, len);
 
-		len = list.length;
+		const tree = list[i];
 
-		i = find_min_index( compare, list, 0, len );
-
-		tree = list[i];
-
-		remove_head_at_index( compare, list, i, len );
+		remove_head_at_index(compare, list, i, len);
 
 		return tree;
 	};
 
-	var change_parent = function ( parent, children ) {
+	const change_parent = function (parent, children) {
+		const len = children.length;
 
-		var i, len;
-
-		for ( i = 0, len = children.length ; i < len ; ++i ) {
+		for (let i = 0; i < len; ++i) {
 			children[i].setparent(parent);
 		}
-
 	};
 
-	var shift_up = function ( tree, parent ) {
-
-		var tmp, i;
-
-		// console.log( "tree", tree.value );
+	const shift_up = function (tree, parent) {
+		// Console.log( "tree", tree.value );
 		// console.log( "parent", parent.value );
 
 		// Here, we cannot just swap values as it would invalidate
@@ -263,256 +210,195 @@ export default function BinomialHeap ( BinomialTree ) {
 		// console.log( "tree.children", tree.children );
 		// console.log( "parent.children", parent.children );
 
-		tmp = parent.children;
+		const tmp = parent.children;
 		parent.children = tree.children;
 		tree.children = tmp;
 
+		const i = parent.rank();
 
-		i = parent.rank();
-
-		// console.log( tree.children, i );
+		// Console.log( tree.children, i );
 
 		tree.children[i] = parent;
 
 		tree.parent = parent.parent;
 
-		change_parent( tree, tree.children );
-		change_parent( parent, parent.children );
+		change_parent(tree, tree.children);
+		change_parent(parent, parent.children);
 
-		// console.log( "tree.children", tree.children );
+		// Console.log( "tree.children", tree.children );
 		// console.log( "parent.children", parent.children );
 
 		return tree.parent;
-
 	};
 
-	var percolate_up = function ( list, tree ) {
+	const percolate_up = function (list, tree) {
+		let parent = tree.parent;
 
-		var tmp, parent;
+		if (parent !== null) {
+			while (true) {
+				parent = shift_up(tree, parent);
 
-		parent = tree.parent;
-
-		if ( parent !== null ) {
-
-			while ( true ) {
-
-				parent = shift_up( tree, parent );
-
-				if ( parent === null ) {
+				if (parent === null) {
 					break;
 				}
 
 				// TODO this call might not be necessary
 				parent.children[tree.rank()] = tree;
-
 			}
 
 			list[tree.rank()] = tree;
-
 		}
-
 	};
 
-	var decreasekey = function ( compare, list, tree, value ) {
-
-		var d, tmp, parent;
-
+	const decreasekey = function (compare, list, tree, value) {
 		tree.value = value;
-		parent = tree.parent;
+		let parent = tree.parent;
 
-		if ( parent !== null ) {
+		if (parent !== null) {
+			while (true) {
+				const d = compare(value, parent.value);
 
-			while ( true ) {
-
-				d = compare( value, parent.value );
-
-				if ( d >= 0 ) {
+				if (d >= 0) {
 					return;
 				}
 
-				parent = shift_up( tree, parent );
+				parent = shift_up(tree, parent);
 
-				if ( parent === null ) {
+				if (parent === null) {
 					break;
 				}
 
 				// TODO this call should be in if ( d >= 0 )
 				parent.children[tree.rank()] = tree;
-
 			}
 
 			list[tree.rank()] = tree;
-
 		}
-
 	};
 
-	var deletetree = function ( compare, list, tree ) {
+	const deletetree = function (compare, list, tree) {
+		percolate_up(list, tree);
 
-		percolate_up( list, tree );
-
-		remove_head_at_index( compare, list, tree.rank(), list.length );
+		remove_head_at_index(compare, list, tree.rank(), list.length);
 
 		tree.detach();
-
 	};
 
-	var Heap = function ( compare ) {
-
-		// the compare function to use to compare values
+	const Heap = function (compare) {
+		// The compare function to use to compare values
 
 		this.compare = compare;
 
-
-		// number of elements in this heap
+		// Number of elements in this heap
 
 		this.length = 0;
 
-
-		// list of binomial trees
+		// List of binomial trees
 
 		this.list = [];
-
 	};
 
 	Heap.prototype.head = function () {
-
-		var i, tree;
-
-		if ( this.length === 0 ) {
+		if (this.length === 0) {
 			return undefined;
 		}
 
-		i = find_min_index( this.compare, this.list, 0, this.list.length );
+		const i = find_min_index(this.compare, this.list, 0, this.list.length);
 
-		tree = this.list[i];
+		const tree = this.list[i];
 
 		return tree.value;
-
 	};
 
 	Heap.prototype.headreference = function () {
-
-		var i, tree;
-
-		if ( this.length === 0 ) {
+		if (this.length === 0) {
 			return null;
 		}
 
-		i = find_min_index( this.compare, this.list, 0, this.list.length );
+		const i = find_min_index(this.compare, this.list, 0, this.list.length);
 
-		tree = this.list[i];
+		const tree = this.list[i];
 
 		return tree;
-
 	};
 
 	Heap.prototype.pop = function () {
-
-		if ( this.length === 0 ) {
+		if (this.length === 0) {
 			return undefined;
 		}
 
 		--this.length;
 
-		return binomial_heap_pop( this.compare, this.list ).value;
-
+		return binomial_heap_pop(this.compare, this.list).value;
 	};
 
 	Heap.prototype.popreference = function () {
-
-		if ( this.length === 0 ) {
+		if (this.length === 0) {
 			return null;
 		}
 
 		--this.length;
 
-		return binomial_heap_pop( this.compare, this.list ).detach();
-
+		return binomial_heap_pop(this.compare, this.list).detach();
 	};
 
-	Heap.prototype.push = function ( value ) {
+	Heap.prototype.push = function (value) {
+		// Push a new tree of rank 0
 
-		var tree;
+		const tree = new BinomialTree(value, []);
 
-		// push a new tree of rank 0
-
-		tree = new BinomialTree( value, [] );
-
-		this.pushreference( tree );
+		this.pushreference(tree);
 
 		return tree;
-
 	};
 
-	Heap.prototype.pushreference = function ( tree ) {
-
+	Heap.prototype.pushreference = function (tree) {
 		++this.length;
 
-		// push an existing tree of rank 0
+		// Push an existing tree of rank 0
 
-		binomial_heap_push( this.compare, this.list, tree, 0 );
-
+		binomial_heap_push(this.compare, this.list, tree, 0);
 	};
 
-	Heap.prototype.merge = function ( other ) {
-
-		merge( this.compare, this.list, other.list );
+	Heap.prototype.merge = function (other) {
+		merge(this.compare, this.list, other.list);
 
 		this.length += other.length;
 
 		return this;
-
 	};
 
-	Heap.prototype.update = function ( tree, value ) {
+	Heap.prototype.update = function (tree, value) {
+		const d = this.compare(value, tree.value);
 
-		var d;
-
-		d = this.compare( value, tree.value );
-
-		if ( d < 0 ) {
-			this.decreasekey( tree, value );
-		}
-
-		else if ( d > 0 ) {
-			this.increasekey( tree, value );
-		}
-
-		else {
-
-			// d === 0 does not imply tree.value === value
+		if (d < 0) {
+			this.decreasekey(tree, value);
+		} else if (d > 0) {
+			this.increasekey(tree, value);
+		} else {
+			// D === 0 does not imply tree.value === value
 
 			tree.value = value;
-
 		}
-
 	};
 
-	Heap.prototype.decreasekey = function ( tree, value ) {
-
-		decreasekey( this.compare, this.list, tree, value );
-
+	Heap.prototype.decreasekey = function (tree, value) {
+		decreasekey(this.compare, this.list, tree, value);
 	};
 
-	Heap.prototype.increasekey = function ( tree, value ) {
-
-		deletetree( this.compare, this.list, tree );
+	Heap.prototype.increasekey = function (tree, value) {
+		deletetree(this.compare, this.list, tree);
 
 		tree.value = value;
 
-		binomial_heap_push( this.compare, this.list, tree, 0 );
-
+		binomial_heap_push(this.compare, this.list, tree, 0);
 	};
 
-	Heap.prototype.delete = function ( tree ) {
-
+	Heap.prototype.delete = function (tree) {
 		--this.length;
 
-		deletetree( this.compare, this.list, tree );
-
+		deletetree(this.compare, this.list, tree);
 	};
 
 	return Heap;
-
 }

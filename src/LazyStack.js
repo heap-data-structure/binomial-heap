@@ -1,56 +1,42 @@
-import LazyNode from './LazyNode.js' ;
+import LazyNode from './LazyNode.js';
 
 /**
  * LazyStack#peek only valid if LazyStack#empty is false.
  * LazyStack#shift only valid if LazyStack#empty is false.
  */
 
-export default function LazyStack ( ) {
-
-	this.top = null ;
-	this.bottom = null ;
-
+export default function LazyStack() {
+	this.top = null;
+	this.bottom = null;
 }
 
-LazyStack.prototype.empty = function ( ) {
+LazyStack.prototype.empty = function () {
+	return this.top === null;
+};
 
-	return this.top === null ;
+LazyStack.prototype.push = function (value) {
+	this.top = new LazyNode(value, this.top);
 
-} ;
-
-LazyStack.prototype.push = function ( value ) {
-
-
-	this.top = new LazyNode( value , this.top ) ;
-
-	if ( this.bottom === null ) this.bottom = this.top ;
-
-} ;
+	if (this.bottom === null) this.bottom = this.top;
+};
 
 /**
  * Only valid if LazyStack#empty is false.
  */
 
-LazyStack.prototype.pop = function ( ) {
+LazyStack.prototype.pop = function () {
+	const value = this.top.value;
 
-	var value ;
+	this.top = this.top.next;
 
-	value = this.top.value ;
+	if (this.top === null) this.bottom = null;
 
-	this.top = this.top.next ;
+	return value;
+};
 
-	if ( this.top === null ) this.bottom = null ;
+LazyStack.prototype.meld = function (other) {
+	if (this.bottom === null) this.top = other.top;
+	else this.bottom.next = other.top;
 
-	return value ;
-
-} ;
-
-LazyStack.prototype.meld = function ( other ) {
-
-	if ( this.bottom === null ) this.top = other.top ;
-
-	else this.bottom.next = other.top ;
-
-	this.bottom = other.bottom ;
-
-} ;
+	this.bottom = other.bottom;
+};
