@@ -1923,7 +1923,7 @@
   dependencies:
     arrify "^1.0.1"
 
-"@data-structure/deque@^9.0.0":
+"@data-structure/deque@^9.0.1":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@data-structure/deque/-/deque-9.0.1.tgz#756f8a80d5bc3fe2be18a5739d051493397a6367"
   integrity sha512-/LSOEPmWGZ10OiKfje06GNDM/fzbY1ZfXyvZKr+/a79ZTlGoTwsQW1uPvtmQDtBzs2h2VbPjHho4zNSP5YH0Zg==
@@ -1965,10 +1965,10 @@
   resolved "https://registry.yarnpkg.com/@functional-abstraction/functools/-/functools-3.0.2.tgz#19c51ebb30b1e699ef9f30d2dcdbe1f11b1c9852"
   integrity sha512-CL5aTFWBa+zoiwLFePQhvSJr/aX2nEG69dqAp7Zf3D2I/DGHE+KNe31DNJdNCZtJJPthsVg17qyMXldabre2Lw==
 
-"@heap-data-structure/specification@16.0.0":
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/@heap-data-structure/specification/-/specification-16.0.0.tgz#268f0030d949fa64bffca82e097bab4c312d10c0"
-  integrity sha512-g7BISWntotMaSP+YBoARFKw40SELQrTOmM2H80dej5P2O2Vvn6z7TyBAwTNkgv7u1yN5VDnibtTIvEFX1KC2Ow==
+"@heap-data-structure/specification@16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@heap-data-structure/specification/-/specification-16.0.1.tgz#13b34c3381bfdf57a8f210877e84463150484792"
+  integrity sha512-mNgwYuaXqXRDb5ukjLTPyLCz8w2K0+4gnvP0AGvicHqt+wLS/CaO2DBIrNvIUplaRVaLunqncoI4IN/PYh1x7w==
   dependencies:
     "@functional-abstraction/functools" "^3.0.2"
     "@iterable-iterator/chain" "^2.0.1"
@@ -1976,7 +1976,7 @@
     "@iterable-iterator/list" "^1.0.1"
     "@iterable-iterator/map" "^1.0.1"
     "@randomized/random" "^4.0.0"
-    "@set-theory/cartesian-product" "^2.0.1"
+    "@set-theory/cartesian-product" "^2.0.2"
     "@total-order/primitive" "^1.0.1"
 
 "@humanwhocodes/config-array@^0.6.0":
@@ -2008,7 +2008,7 @@
   resolved "https://registry.yarnpkg.com/@iterable-iterator/consume/-/consume-1.0.1.tgz#abbe00af0d48542eb8e240f698e85fd4ba9b28b0"
   integrity sha512-KVJufzV8/gOnYqrtO4CFdGZopJ5kkUBhzHcbU0iToOv5aTl0igxnsRzCaDSxUgO4q0mDbf9WEfjz4K39cl1iNA==
 
-"@iterable-iterator/count@^1.0.0":
+"@iterable-iterator/count@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/count/-/count-1.0.1.tgz#37c13ff5cb43528280fcf0c2c0791475ebff4cf2"
   integrity sha512-nLBcrNownYvXgye2CVnQvTjZ5d3C2b/5nrySDvQ9/7ej5pGSfkvYvIl4xcZcocViwIa49p6/72nkcDC1xkvpJg==
@@ -2023,17 +2023,17 @@
   resolved "https://registry.yarnpkg.com/@iterable-iterator/iter/-/iter-1.0.1.tgz#11149acef0d28b689e0b998dc478113eda81871d"
   integrity sha512-/C/Ciq69we9C0wvqx0rOdnpXAoSW+UnyIV/ZQrUYDzmtguvUQ4HjiIPcU2Csdh705VS6TMkUhoaBHIGh44V3OA==
 
-"@iterable-iterator/list@^1.0.0", "@iterable-iterator/list@^1.0.1":
+"@iterable-iterator/list@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/list/-/list-1.0.1.tgz#e84fd841d7d58c2ad6d0c026f0612c8228dc97f5"
   integrity sha512-234a2cf0a0YhD1Ofb3F0xSjXDkqDK1xCiLnXoMUt/DWAt/odAvJToaxEFMemiKlAUvqF6E8MSi2v2UvlIOpBUA==
 
-"@iterable-iterator/map@^1.0.0", "@iterable-iterator/map@^1.0.1":
+"@iterable-iterator/map@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/map/-/map-1.0.1.tgz#7e4d82cb86877bf487e075347fde990ed21844da"
   integrity sha512-lUvX8/OCYRdof3eZii8ntJUvqW1MlL2ESkIcQj3cagajKVfBIBj058wE4ScrzQl6U2udMva/n2NwP70smdfZ+g==
 
-"@iterable-iterator/next@^2.0.0":
+"@iterable-iterator/next@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/next/-/next-2.0.1.tgz#b58a7471984cd1165e3b93e3fea646f4137b370f"
   integrity sha512-D4E5JSH7xFEQqmJI8XMaotest1L1RM6wJssEDFRva81oZNZwPYmTlKErPZZVLnrZU/wTflEVwrImxUacoIZK3Q==
@@ -2139,18 +2139,18 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@set-theory/cartesian-product@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@set-theory/cartesian-product/-/cartesian-product-2.0.1.tgz#5b80994ae53e4c80e369c78cb369845de18d229c"
-  integrity sha512-ifjwAGPY52Dvmtm1jQV+6jEdHlKg9nMCnogb96YtbckUN9uESDK8slMRy0nQHFGf61i1kjVNGKMzOrGzFZJZkw==
+"@set-theory/cartesian-product@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@set-theory/cartesian-product/-/cartesian-product-2.0.2.tgz#1a692a63c7d9bf1e4721b5fc82f8df9570c29c6d"
+  integrity sha512-tDq7FjuDHW6EgR/wGP6Uas0xvFTIxnoaE39aS/yI2QOKlb/Lc820JoWXhYNwBL9TaR3mL5KlXJxmmoVejzeSjQ==
   dependencies:
-    "@data-structure/deque" "^9.0.0"
-    "@iterable-iterator/count" "^1.0.0"
+    "@data-structure/deque" "^9.0.1"
+    "@iterable-iterator/count" "^1.0.1"
     "@iterable-iterator/cycle" "^1.0.0"
     "@iterable-iterator/iter" "^1.0.1"
-    "@iterable-iterator/list" "^1.0.0"
-    "@iterable-iterator/map" "^1.0.0"
-    "@iterable-iterator/next" "^2.0.0"
+    "@iterable-iterator/list" "^1.0.1"
+    "@iterable-iterator/map" "^1.0.1"
+    "@iterable-iterator/next" "^2.0.1"
     "@iterable-iterator/reversed" "^1.0.0"
 
 "@sindresorhus/is@^0.14.0":
