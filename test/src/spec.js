@@ -8,7 +8,7 @@ import {
 	BinomialTreeWithParent,
 	BinomialTree,
 	LazyBinomialHeap,
-} from '../../src/index.js';
+} from '#module';
 
 const heapswithreferences = [
 	[
