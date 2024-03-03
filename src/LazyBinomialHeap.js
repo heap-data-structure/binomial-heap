@@ -91,15 +91,15 @@ export default function LazyBinomialHeap(BinomialTree) {
 
 			// (1) other[i] != null and list[i] != null and carry = null
 			// --> merge current cell with other[i]
-			else if (list[i] !== null) {
-				carry = list[i].merge(compare, other[i]);
-				list[i] = null;
+			else if (list[i] === null) {
+				list[i] = other[i];
 			}
 
 			// (3) other[i] != null and list[i] = null and carry = null
 			// --> put other[i] in list
 			else {
-				list[i] = other[i];
+				carry = list[i].merge(compare, other[i]);
+				list[i] = null;
 			}
 		}
 
